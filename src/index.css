@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -12,7 +13,35 @@ code {
     monospace;
 }
 
+.video-bg{
+  z-index: -1;
+}
 
+.text-shadow {
+  text-shadow:0.5px 0.5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.name-icon g {
+  fill: #fff;
+}
+.name-icon path{
+  stroke: #fff;
+  stroke-width: 3px;
+  text-shadow:5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.name-icon{
+  text-shadow:5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.toronto-video {
+  z-index: -5;
+  filter: brightness(75%);
+}
+
+.z-index-behind{
+  z-index: -4;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
