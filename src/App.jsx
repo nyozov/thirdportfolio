@@ -80,14 +80,14 @@ function App() {
           </motion.div>
         </ParallaxLayer>
         <ParallaxLayer
-          className=""
+          className="bg-about"
           factor={1}
           offset={1}
           speed={0.5}
         
         ></ParallaxLayer>
         <ParallaxLayer
-          className="flex justify-center border-2 border-white rounded-lg  bg-transparent"
+          className="flex justify-center rounded-lg  bg-transparent"
           factor={1}
           offset={1}
           speed={2}
