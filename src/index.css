@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Neue-Montreal;
+  src: url('./assets/fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Medium.otf');
+}
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Neue-Montreal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(2,0,36);
@@ -56,4 +58,9 @@ code {
 
 .bg-about{
   background: rgba(0, 0, 0, 0.8);
+}
+
+.bg-button {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
 }

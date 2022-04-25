@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import { AiFillGithub } from 'react-icons/ai'
 
 export default function Navbar() {
+ const ref = useRef()
 
     const [show, setshow] = useState(false);
     return (
@@ -34,8 +35,11 @@ export default function Navbar() {
                         <h1 className="text-white text-2xl leading-6 text-shadow"><span className='font-bold'>Nick</span>Yozov</h1>
                     </div>
                     <div className="hidden sm:flex flex-row space-x-4">
-                        <div className="rounded-md flex space-x-2 w-24 h-10 font-semibold  text-white hover:text-gray-300 cursor-pointer text-shadow justify-center items-center">Projects</div>
-                        <button className="rounded-md font-semibold text-white px-3 shadow-md flex bg-gradient-to-br from-purple-400 to-teal-400  hover:from-purple-500 hover:to-teal-500 justify-center items-center">Contact Me</button>
+                        <div 
+                     
+                       
+                        className="rounded-md flex space-x-2 w-24 h-10 font-semibold  text-white hover:text-gray-300 cursor-pointer text-shadow justify-center items-center">Projects</div>
+                        <button className=" font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent hover:border-gray-200">Contact Me</button>
                     </div>
                     {/* Burger Icon */}
                     <div id="bgIcon" onClick={()=>setshow(!show)} className={`focus:outline-none focus:ring-2 shadow-md p-[2px] rounded hover:shadow-2xl focus:ring-offset-2 focus:ring-gray-800  justify-center items-center sm:hidden cursor-pointer`}>
