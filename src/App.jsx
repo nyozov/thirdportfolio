@@ -80,7 +80,7 @@ function App() {
           </motion.div>
         </ParallaxLayer>
         <ParallaxLayer
-          className="bg-white"
+          className=""
           factor={1}
           offset={1}
           speed={0.5}
