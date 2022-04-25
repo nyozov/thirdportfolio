@@ -1,7 +1,7 @@
 import React, {useState, useRef} from "react";
 import { AiFillGithub } from 'react-icons/ai'
 
-export default function Navbar() {
+export default function Navbar({parallax}) {
  const ref = useRef()
 
     const [show, setshow] = useState(false);
@@ -37,7 +37,7 @@ export default function Navbar() {
                     <div className="hidden sm:flex flex-row space-x-4">
                         <div 
                      
-                       
+                     onClick={() => parallax.current.scrollTo(2)}
                         className="rounded-md flex space-x-2 w-24 h-10 font-semibold  text-white hover:text-gray-300 cursor-pointer text-shadow justify-center items-center">Projects</div>
                         <button className=" font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent hover:border-gray-200">Contact Me</button>
                     </div>

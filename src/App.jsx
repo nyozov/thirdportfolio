@@ -20,6 +20,22 @@ function App() {
 
  
 
+  
+ const onScroll = () =>
+ console.log(parallax.current.current / parallax.current.space)
+
+useEffect(() => {
+ if (!parallax.current || !parallax.current.container) return
+ parallax.current.container.onscroll = onScroll
+})
+
+
+
+
+
+
+ 
+
 
 
  
@@ -57,7 +73,7 @@ function App() {
     />
       <VideoBg />
       <ScrollIndicator parallax={parallax}/>
-      <Parallax pages={3} ref={parallax} style={{ top: "0", left: "0" }}>
+      <Parallax className='parallax'pages={3} ref={parallax} style={{ top: "0", left: "0" }}>
         <motion.div
         
         className='h-screen w-screen flex justify-center items-center'
@@ -74,7 +90,7 @@ function App() {
             animate={{ opacity:1 }}
 
            className='h-screen w-screen'>
-            <Navbar />
+            <Navbar parallax={parallax}/>
             <Title />
            
           </motion.div>
