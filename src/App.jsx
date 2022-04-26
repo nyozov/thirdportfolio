@@ -18,17 +18,9 @@ import AnimatedCursor from "react-animated-cursor";
 function App() {
  const parallax = useRef(null)
 
- 
 
+ //this function will set the value of position when the page is scrolled
   
- const onScroll = () =>
- console.log(parallax.current.current / parallax.current.space)
-
-useEffect(() => {
- if (!parallax.current || !parallax.current.container) return
- parallax.current.container.onscroll = onScroll
-})
-
 
 
 
