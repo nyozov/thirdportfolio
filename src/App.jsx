@@ -111,7 +111,7 @@ function App() {
           factor={1}
           offset={2}
           speed={2}
-          style={{ backgroundColor: "blue" }}
+          className='bg-about'
         />
         <ParallaxLayer
        
