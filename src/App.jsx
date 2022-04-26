@@ -65,7 +65,7 @@ function App() {
     />
       <VideoBg />
       <ScrollIndicator parallax={parallax}/>
-      <Parallax className='parallax'pages={3} ref={parallax} style={{ top: "0", left: "0" }}>
+      <Parallax className='parallax'pages={3.5} ref={parallax} style={{ top: "0", left: "0" }}>
         <motion.div
         
         className='h-screen w-screen flex justify-center items-center'
@@ -108,22 +108,18 @@ function App() {
       
 
         <ParallaxLayer
-          factor={1}
+          factor={1.2}
           offset={2}
           speed={2}
           className='bg-about'
         />
         <ParallaxLayer
        
-          factor={1}
+          factor={1.2}
           offset={2}
           speed={0.5}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "white",
-          }}
+   
+          
         >
           <Projects />
         </ParallaxLayer>
