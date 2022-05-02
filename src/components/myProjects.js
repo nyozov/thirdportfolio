@@ -1,8 +1,11 @@
+import galleryImg from '../assets/preview-wide.png'
+import etuneImg from '../assets/preview-wide.png'
+
 const myProjects = [
   {
     name: "Gallery",
     badges: ["React", "Firebase"],
-    img: "https://github.com/nyozov/gallery/raw/master/src/assets/preview-wide.png?raw=true",
+    img: galleryImg,
     url: "https://github.com/nyozov/gallery",
     siteUrl: "https://coherent-server-332620.web.app/",
     desc: "Image hosting app where a user can log in, upload and delete images in their personal storage. Fully functional with drag and drop upload, load transitions, and auth."
@@ -10,7 +13,7 @@ const myProjects = [
   {
     name: "Etune",
     badges: ["React", "Express"],
-    img: "https://github.com/nyozov/etune/raw/master/src/assets/wide-view.png?raw=true",
+    img: etuneImg,
     url: "https://github.com/nyozov/etune",
     siteUrl: "https://nifty-chandrasekhar-58abcd.netlify.app/",
     desc: "Online vehicle ECU tuning service where a user can fill out a form, pay through Stripe, and then receive an email copy of their purchase through Twilio SendGrid.",

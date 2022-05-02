@@ -2,7 +2,7 @@
 import myProjects from "./myProjects"
 import { motion } from 'framer-motion'
 import { ParallaxLayer } from "@react-spring/parallax";
-
+import ThreeObject from "./ThreeObject";
 
 
 const Projects = () => (
@@ -12,10 +12,12 @@ const Projects = () => (
       <div className="md:mt-24 f-f-p">
         <div className=" md:flex justify-center w-full">
           <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
-            
-            <motion.div className="img-hover-zoom"  aria-label="sign up" role="img">
-              <img className=" focus:outline-none mr-2 mt-10 shadow cursor-pointer" src={myProjects[0].img} alt="how it work" />
+          <motion.div  whileHover={{scale:1.1}} className="img-hover-zoom"  aria-label="sign up" role="img">
+            <ThreeObject img={myProjects[0].img}/>
             </motion.div>
+            {/* <motion.div className="img-hover-zoom"  aria-label="sign up" role="img">
+              <img className=" focus:outline-none mr-2 mt-10 shadow cursor-pointer" src={myProjects[0].img} alt="how it work" />
+            </motion.div> */}
 
         
             <div className="flex mt-12 flex-col items-center lg:items-end md:w-8/12">
@@ -34,6 +36,8 @@ const Projects = () => (
               <h1 className="focus:outline-none text-xl font-bold leading-5 text-white">Gallery</h1>
               <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">{myProjects[0].desc} </h2>
             </div>
+
+            
             <motion.div className="img-hover-zoom cursor-pointer" aria-label="wallet" role="img">
               <img className="focus:outline-none mt-32" src={myProjects[1].img} alt />
             </motion.div>
