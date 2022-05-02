@@ -8,8 +8,8 @@ export default function Footer() {
       <div className='w-full p-2 flex justify-center'>
       ✌️
       </div>
-      <div className='flex  justify-evenly w-full h-full align-center items-center'>
-       <div className='flex justify-between w-[150px]'>
+      <div className='flex  justify-evenly w-full h-full items-center'>
+       <div className='flex justify-between px-4  w-[200px]'>
         <p className='cursor-pointer hover:underline'>Contact</p>
         <p className='cursor-pointer hover:underline'>Github</p>
         <p className='cursor-pointer hover:underline'>Resume</p>

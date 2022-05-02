@@ -1,5 +1,7 @@
 import galleryImg from '../assets/preview-wide.png'
 import etuneImg from '../assets/preview-wide.png'
+import therapifyImg from '../assets/therapifyImg.png'
+
 
 const myProjects = [
   {
@@ -21,7 +23,7 @@ const myProjects = [
   {
     name: "Therapify",
     badges: ["React", "Express"],
-    img: '',
+    img: therapifyImg,
     url: "https://github.com/habibcodes/therapify",
     desc: "Tele-health service connecting a patient and a practitioner through features including a calendar for appointments, text-chat, and video-chat through WebRTC.",
   },
