@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ParallaxLayer } from "@react-spring/parallax";
+import ThreeObject from './ThreeObject'
 
 export default function About() {
   const spring = {
@@ -12,10 +13,13 @@ export default function About() {
   }
 
   return (
+
+    <div>
+       <ThreeObject/>
     <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
         <ParallaxLayer/>
       <div className="border-r border-gray-300 w-1/2">
-        <p className="text-xl text-white">Skills</p>
+        <p className="mt-3 text-xl text-white">Skills</p>
         <ul className="p-2 py-12 text-gray-200">
           <motion.div initial={{ opacity: 0 }} transition={spring} whileInView={{ opacity: 1 }}>
             <li className="mt-3">Frontend</li>
@@ -31,14 +35,17 @@ export default function About() {
           </motion.div>
         </ul>
       </div>
-      <div className="w-3/4 p-4">
-        <p className="text-xl text-white">About</p>
-        <p className="font-thin text-gray-200 mt-3">
+      <div className="w-3/4 p-4 flex flex-col items-center">
+        <p className="text-xl text-white w-3/4 text-left">About</p>
+        <p className="w-3/4  font-thin text-gray-300 text-left mt-3">
           Hi ✋, my name is Nick and I am a full stack web developer based out
           of Toronto. I recently completed a web development course through
           Lighthouse Labs, and am now looking
         </p>
+       
+
       </div>
+    </div>
     </div>
   );
 }

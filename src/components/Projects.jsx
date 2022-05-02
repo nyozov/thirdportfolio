@@ -13,7 +13,7 @@ const Projects = () => (
         <div className=" md:flex justify-center w-full">
           <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
           <motion.div  whileHover={{scale:1.1}} className="img-hover-zoom"  aria-label="sign up" role="img">
-            <ThreeObject img={myProjects[0].img}/>
+        
             </motion.div>
             {/* <motion.div className="img-hover-zoom"  aria-label="sign up" role="img">
               <img className=" focus:outline-none mr-2 mt-10 shadow cursor-pointer" src={myProjects[0].img} alt="how it work" />
