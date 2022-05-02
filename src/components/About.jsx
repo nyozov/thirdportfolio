@@ -34,7 +34,7 @@ export default function About() {
       <div className="w-3/4 p-4">
         <p className="text-xl text-white">About</p>
         <p className="font-thin text-gray-200 mt-3">
-          Hi ✋, my name is Nick and I am a full stack web developer based out
+          Hi 👋, my name is Nick and I am a full stack web developer based out
           of Toronto. I recently completed a web development course through
           Lighthouse Labs, and am now looking
         </p>

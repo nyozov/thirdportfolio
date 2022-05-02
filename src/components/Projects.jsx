@@ -14,7 +14,7 @@ const Projects = () => (
           <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
             
             <motion.div className="img-hover-zoom"  aria-label="sign up" role="img">
-              <img className=" focus:outline-none mr-2 mt-10 shadow cursor-pointer" src={myProjects[0].img} alt="how it work" />
+              <img className=" focus:outline-none mr-2 mt-10 shadow max-w-[350px] cursor-pointer" src={myProjects[0].img} alt="how it work" />
             </motion.div>
 
         
@@ -35,7 +35,7 @@ const Projects = () => (
               <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">{myProjects[0].desc} </h2>
             </div>
             <motion.div className="img-hover-zoom cursor-pointer" aria-label="wallet" role="img">
-              <img className="focus:outline-none mt-32" src={myProjects[1].img} alt />
+              <img className="focus:outline-none shadow mt-32 max-w-[350px]" src={myProjects[1].img} alt />
             </motion.div>
             
             <div className="flex mt-6 flex-col items-center md:items-start md:w-8/12">
