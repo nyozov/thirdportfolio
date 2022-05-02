@@ -68,7 +68,7 @@ function App() {
             factor={0.1}
             offset={0}
             speed={1}
-            className="bg-about mt-[35vh] ml-[30vw] max-w-[350px]"
+            className="bg-about mt-[36vh] ml-[30vw] max-w-[350px]"
           />
         </motion.div>
         <ParallaxLayer factor={1} offset={0} speed={2.5}>
