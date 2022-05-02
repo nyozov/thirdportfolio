@@ -84,8 +84,29 @@ const Projects = () => {
                   {myProjects[2].desc}
                 </h2>
               </div>
+              {more && (
+                <>
+              
+              <motion.div
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+                className="img-hover-zoom cursor-pointer"
+                aria-label="wallet"
+                role="img"
+              >
+                <img
+                  className="focus:outline-none shadow mt-32 max-w-[350px]"
+                  src={myProjects[4].img}
+                  alt='etune image'
+                />
+              </motion.div>
+              
+              </>
+               ) }
             </div>
+            
           </div>
+          
           <div className="md:hidden flex flex-col items-center w-full">
             <div className="mt-10">
               <h1 className="text-xl text-center tracking-wide leading-5 font-bold">
@@ -96,6 +117,7 @@ const Projects = () => {
                 best .
               </h2>
             </div>
+            
   
             <div className="mt-10">
               <h1 className="text-xl tracking-wide text-center leading-5 font-bold">
@@ -106,6 +128,7 @@ const Projects = () => {
                 comfortable with. Paypal, Visa and more
               </h2>
             </div>
+            
   
             <div className="flex mt-10 flex-col items-center md:items-start md:w-8/12">
               <h1 className="text-xl text-center tracking-wide leading-5 font-bold">

@@ -97,7 +97,7 @@ function App() {
           <About />
         </ParallaxLayer>
 
-        <ParallaxLayer factor={2} offset={2} speed={2} className="bg-about" />
+        <ParallaxLayer factor={2.5} offset={2} speed={2} className="bg-about" />
         <ParallaxLayer factor={1.2} offset={2} speed={0.5}>
           <Projects />
         </ParallaxLayer>
