@@ -48,6 +48,7 @@ function App() {
           "button",
           ".link",
           ".cursor-pointer",
+          ".clicker",
         ]}
       />
       <VideoBg />

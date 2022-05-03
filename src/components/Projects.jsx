@@ -15,6 +15,9 @@ const Projects = () => {
           <div className=" md:flex justify-center w-full">
             <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
               <motion.div
+                initial={{ opacity: 0, y:100 }}
+                transition={{delay: 0.1, duration: 0.5}}
+                whileInView={{ opacity: 1, y: 0 }}
                 className="img-hover-zoom"
                 aria-label="sign up"
                 role="img"
@@ -25,11 +28,25 @@ const Projects = () => {
                   alt="gallery image"
                 />
               </motion.div>
+           
   
               <div className="flex mt-12 flex-col items-center lg:items-end md:w-8/12">
                 <h1 className="focus:outline-none text-xl font-bold leading-5 text-white">
                   E-Tune
                 </h1>
+                <div className='flex'>
+              {myProjects[1].badges.map((badge) => (
+                <div className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-8 w-24 md:mb-0 rounded-md flex items-center justify-center">
+                <div className="flex items-center">
+                    <div className="h-1 w-1 rounded-full bg-indigo-700 mr-1" />
+                    <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">{badge}</span>
+                </div>
+            </div>
+              ))}
+
+
+
+              </div>
                 <h2 className="focus:outline-none text-gray-500 mt-3 pl-3 text-center md:text-right text-base leading-6 tracking-wide">
                   {myProjects[1].desc}{" "}
                 </h2>
@@ -37,6 +54,9 @@ const Projects = () => {
               </div>
               <div aria-label="transactions" role="img">
                 <motion.div
+                    initial={{ opacity: 0, y:100 }}
+                    transition={{delay: 0.1, duration: 0.5}}
+                    whileInView={{ opacity: 1, y: 0 }}
                   className="img-hover-zoom"
                   aria-label="sign up"
                   role="img"
@@ -65,6 +85,9 @@ const Projects = () => {
                 <div className="border border-blue-300 w-1/4 ml-[-52px] mt-2 " />
               </div>
               <motion.div
+                  initial={{ opacity: 0, y:100 }}
+                  transition={{delay: 0.1, duration: 0.5}}
+                  whileInView={{ opacity: 1, y: 0 }}
                 className="img-hover-zoom cursor-pointer"
                 aria-label="wallet"
                 role="img"
@@ -88,8 +111,7 @@ const Projects = () => {
                 <>
               
               <motion.div
-              initial={{opacity:0}}
-              animate={{opacity:1}}
+            
                 className="img-hover-zoom cursor-pointer"
                 aria-label="wallet"
                 role="img"
@@ -144,14 +166,14 @@ const Projects = () => {
       </div>
       <div className='w-screen flex justify-center items-center'>
         {!more && 
-      <button onClick={()=>setMore(true)} className="font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-button justify-center w-36 items-center border border-transparent border-gray-200">
+      <div onClick={()=>setMore(true)} className="clicker font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200">
         See More
-      </button>
+      </div>
       }
       {more && 
-      <button onClick={()=>setMore(false)} className="font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-button justify-center w-36 items-center border border-transparent border-gray-200">
+      <div onClick={()=>setMore(false)} className="clicker font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200">
         See Less
-      </button>
+      </div>
       }
   
       </div>

@@ -1,5 +1,5 @@
 import galleryImg from '../assets/preview-wide.png'
-import etuneImg from '../assets/preview-wide.png'
+import etuneImg from '../assets/etune-img.png'
 import therapifyImg from '../assets/therapifyImg.png'
 
 
