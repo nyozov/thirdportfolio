@@ -15,8 +15,9 @@ export default function About() {
   return (
 
     <div>
-    
+   
        <ThreeObject/>
+    
     
     <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
         <ParallaxLayer/>

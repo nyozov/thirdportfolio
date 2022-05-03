@@ -15,7 +15,7 @@ const Projects = () => {
           <div className=" md:flex justify-center w-full">
             <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
               <motion.div
-                initial={{ opacity: 0, y:100 }}
+                initial={{ y:100 }}
                 transition={{delay: 0.1, duration: 0.5}}
                 whileInView={{ opacity: 1, y: 0 }}
                 className="img-hover-zoom"
@@ -35,8 +35,8 @@ const Projects = () => {
                   E-Tune
                 </h1>
                 <div className='flex'>
-              {myProjects[1].badges.map((badge) => (
-                <div className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-8 w-24 md:mb-0 rounded-md flex items-center justify-center">
+              {myProjects[1].badges.map((badge, index) => (
+                <div key={index} className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-8 w-24 md:mb-0 rounded-md flex items-center justify-center">
                 <div className="flex items-center">
                     <div className="h-1 w-1 rounded-full bg-indigo-700 mr-1" />
                     <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">{badge}</span>
@@ -54,7 +54,7 @@ const Projects = () => {
               </div>
               <div aria-label="transactions" role="img">
                 <motion.div
-                    initial={{ opacity: 0, y:100 }}
+                    initial={{ y:100 }}
                     transition={{delay: 0.1, duration: 0.5}}
                     whileInView={{ opacity: 1, y: 0 }}
                   className="img-hover-zoom"
@@ -85,7 +85,7 @@ const Projects = () => {
                 <div className="border border-blue-300 w-1/4 ml-[-52px] mt-2 " />
               </div>
               <motion.div
-                  initial={{ opacity: 0, y:100 }}
+                  initial={{ y:100 }}
                   transition={{delay: 0.1, duration: 0.5}}
                   whileInView={{ opacity: 1, y: 0 }}
                 className="img-hover-zoom cursor-pointer"
