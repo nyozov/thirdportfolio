@@ -41,6 +41,7 @@ export default function About() {
       <div className="w-3/4 p-4 flex flex-col items-center">
         <p className="text-xl text-white w-3/4 text-left">About</p>
         <motion.div
+        className='w-full flex justify-center items-center'
        initial={{ opacity: 0, y: 100 }}
        transition={{delay: 0.1, duration: 0.5}}
        whileInView={{ opacity: 1, y: 0}}
