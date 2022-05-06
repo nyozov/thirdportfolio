@@ -12,6 +12,7 @@ import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedCursor from "react-animated-cursor";
+import Contact from "./components/Contact";
 
 function App() {
   const parallax = useRef(null);
@@ -55,7 +56,7 @@ function App() {
       <ScrollIndicator parallax={parallax} />
       <Parallax
         className="parallax"
-        pages={3.5}
+        pages={4}
         ref={parallax}
         style={{ top: "0", left: "0" }}
       >
@@ -102,7 +103,10 @@ function App() {
         <ParallaxLayer factor={1.2} offset={2} speed={0.5}>
           <Projects />
         </ParallaxLayer>
-
+        <ParallaxLayer factor={1} offset={3} speed={2} className="bg-about" />
+        <ParallaxLayer factor={0.5} offset={3.2} speed={0.5}>
+          <Contact />
+        </ParallaxLayer>
         <Footer />
       </Parallax>
     </div>

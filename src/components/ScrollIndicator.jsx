@@ -16,7 +16,9 @@ export default function ScrollIndicator({parallax}) {
       <div
         onClick={() => parallax.current.scrollTo(2)}
        className="mt-2 border border-white w-3 h-3 rounded-full hover:bg-gray-300 cursor-pointer"></div>
-      <div className="mt-2 border border-white w-3 h-3 rounded-full hover:bg-gray-300 cursor-pointer"></div>
+      <div 
+      onClick={() => parallax.current.scrollTo(3)}
+      className="mt-2 border border-white w-3 h-3 rounded-full hover:bg-gray-300 cursor-pointer"></div>
     </div>
   );
 }
