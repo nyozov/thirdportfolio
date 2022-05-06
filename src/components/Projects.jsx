@@ -79,6 +79,21 @@ const Projects = () => {
                 <h1 className="focus:outline-none text-xl font-bold leading-5 text-white">
                   Gallery
                 </h1>
+                <div className="flex">
+                  {myProjects[0].badges.map((badge, index) => (
+                    <div
+                      key={index}
+                      className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-8 w-24 md:mb-0 rounded-md flex items-center justify-center"
+                    >
+                      <div className="flex items-center">
+                        <div className="h-1 w-1 rounded-full bg-indigo-700 mr-1" />
+                        <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
+                          {badge}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">
                   {myProjects[0].desc}{" "}
                 </h2>
