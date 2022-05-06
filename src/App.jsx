@@ -17,8 +17,6 @@ import Contact from "./components/Contact";
 function App() {
   const parallax = useRef(null);
 
-  //this function will set the value of position when the page is scrolled
-
   const spring = {
     type: "spring",
     damping: 10,
@@ -107,7 +105,7 @@ function App() {
         <ParallaxLayer factor={0.5} offset={3.2} speed={0.5}>
           <Contact />
         </ParallaxLayer>
-        <Footer />
+        <Footer parallax={parallax} />
       </Parallax>
     </div>
   );
