@@ -136,7 +136,7 @@ export default function Navbar({ parallax }) {
             </div>
           </div>
           <div className="flex flex-col gap-4 mt-4 w-80 mx-auto ">
-            <button className="rounded-md flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-gray-200 hover:bg-gray-500  border border-gray-200  duration-150 justify-center items-center">
+            <button className="rounded-md flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:bg-gray-500  border border-gray-200  duration-150 justify-center items-center">
               Projects
             </button>
             <button className="font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent py-2 rounded-md hover:border-gray-200">

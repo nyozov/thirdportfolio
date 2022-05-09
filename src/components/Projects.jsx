@@ -75,7 +75,7 @@ const Projects = () => {
               />
             </div>
             <div className="flex flex-col items-center md:items-start md:pl-12 lg:border-gray-400 mt-20 md:mt-0 md:w-1/2">
-              <div className=" p-1 flex mt-12 flex-col items-center md:items-start md:w-8/12">
+              <div className="text-left border-white flex mt-12 flex-col items-center md:items-start md:w-8/12">
                 <h1 className="focus:outline-none text-xl font-bold leading-5 text-white">
                   Gallery
                 </h1>
@@ -118,6 +118,21 @@ const Projects = () => {
                 <h1 className="focus:outline-none text-xl font-bold leading-5 text-white">
                   Therapify
                 </h1>
+                <div className="flex">
+                  {myProjects[2].badges.map((badge, index) => (
+                    <div
+                      key={index}
+                      className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-8 w-24 md:mb-0 rounded-md flex items-center justify-center"
+                    >
+                      <div className="flex items-center">
+                        <div className="h-1 w-1 rounded-full bg-indigo-700 mr-1" />
+                        <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
+                          {badge}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">
                   {myProjects[2].desc}
                 </h2>
@@ -146,7 +161,7 @@ const Projects = () => {
         {!more && (
           <div
             onClick={() => setMore(true)}
-            className="clicker font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200"
+            className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200"
           >
             See More
           </div>
@@ -154,7 +169,7 @@ const Projects = () => {
         {more && (
           <div
             onClick={() => setMore(false)}
-            className="clicker font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200"
+            className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border border-transparent border-gray-200"
           >
             See Less
           </div>
