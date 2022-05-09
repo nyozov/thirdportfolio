@@ -80,10 +80,10 @@ const Scene = ({img}) => {
 export default function ThreeObject() {
   return (
     <div className=" w-screen grid grid-rows-2 grid-flow-col gap-2">
-    
+   
       <Scene img={'https://miro.medium.com/max/1400/1*UvWOnSlWP7AbbOtSVUeHMg.png'} className=''/>
       <Scene img={'https://cdn.iconscout.com/icon/free/png-256/ruby-2752084-2284901.png'} className=''/>
-   
+      <Scene img={'https://cdn-icons-png.flaticon.com/512/919/919825.png'} className=''/>
       <Scene img={'https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png'} className=''/>
       <Scene img={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC3rW8XsouaS0ZcaBsSh7Da2J0YO3lioCR-0i9JbhUU37v_5SknvPzXBFHyzsM8tNlS8k&usqp=CAU'} className=''/>
       <Scene img={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAhzSkKQ0GsVFcCT9qSsaHy_GohBdd0pFDA&usqp=CAU'} className=''/>

@@ -1,61 +1,97 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ParallaxLayer } from "@react-spring/parallax";
-import ThreeObject from './ThreeObject'
+import ThreeObject from "./ThreeObject";
+import { useSpring } from "react-spring";
+import Accordion from "react-spring-accordion";
 
 export default function About() {
-  const spring = {
-    type: "spring",
-    damping: 10,
-    stiffness: 100,
-    duration: 0.5,
-    delay: 0.1,
-  }
+
 
   return (
-
     <div>
-   
-       <ThreeObject/>
-    
-    
-    <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
-        <ParallaxLayer/>
-      <div className="border-r border-gray-300 w-1/2">
-        <p className="mt-3 text-xl text-white">Skills</p>
-        <ul className="p-2 py-12 text-gray-200">
-          <motion.div initial={{ opacity: 0, y: 100 }} transition={spring} whileInView={{ opacity: 1, y: 0 }}>
-            <li className="mt-3">Frontend</li>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, y: 100 }} transition={spring} whileInView={{ opacity: 1, y: 0 }}>
-            <li className="mt-3">Backend</li>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, y: 100 }}  transition={spring} whileInView={{ opacity: 1, y: 0 }}>
-            <li className="mt-3">UI/UX</li>
-          </motion.div>
-          <motion.div initial={{ opacity: 0, y: 100 }} transition={spring} whileInView={{ opacity: 1, y: 0 }}>
-            <li className="mt-3">Unit Testing</li>
-          </motion.div>
-        </ul>
-      </div>
-      <div className="w-3/4 p-4 flex flex-col items-center">
-        <p className="text-xl text-white w-3/4 text-left">About</p>
-        <motion.div
-        className='w-full flex justify-center items-center'
-       initial={{ opacity: 0, y: 100 }}
-       transition={{delay: 0.1, duration: 0.5}}
-       whileInView={{ opacity: 1, y: 0}}
-      >
+      <ThreeObject />
 
-        <p className="w-3/4  font-thin text-gray-300 text-left mt-3">
-          Hi ✋, my name is Nick and I am a full stack web developer based out
-          of Toronto. I recently completed a web development course through
-          Lighthouse Labs, and am now looking
-        </p>
-       </motion.div>
+      <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
+        <div className="border-r border-gray-300 w-1/2">
+          <p className="mt-3 text-xl text-white">Skills</p>
+          <ul className="p-12 px-24 text-gray-200">
+            <Accordion.Wrapper>
+              <Accordion.Item className='border'>
+                <Accordion.Heading className="clicker border border-white rounded p-2">
+                  Frontend
+                </Accordion.Heading>
+                <Accordion.Child className="text-gray-400">
+                  React
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  jQuery
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  Tailwind
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  Axios
+                </Accordion.Child>
 
+                
+              </Accordion.Item>
+              <Accordion.Item>
+                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                  Backend
+                </Accordion.Heading>
+
+                <Accordion.Child className="text-gray-400 bg-white rounded-t">
+                  Node
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400 bg-white">
+                  Express
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400 bg-white rounded-b">
+                  Rails
+                </Accordion.Child>
+              </Accordion.Item>
+              <Accordion.Item>
+                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">UI/UX</Accordion.Heading>
+
+                <Accordion.Child className="text-gray-400">
+                  Figma
+                </Accordion.Child>
+              </Accordion.Item>
+              <Accordion.Item>
+                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                  Unit Testing
+                </Accordion.Heading>
+
+                <Accordion.Child className="text-gray-400">
+                  Cypress
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  Mocha/Chai
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  Jest
+                </Accordion.Child>
+              </Accordion.Item>
+            </Accordion.Wrapper>
+          </ul>
+        </div>
+        <div className="w-3/4 p-4 flex flex-col items-center">
+          <p className="text-xl text-white w-3/4 text-left">About</p>
+          <motion.div
+            className="w-full flex justify-center items-center"
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
+            <p className="w-3/4  font-thin text-gray-300 text-left mt-3">
+              Hi ✋, my name is Nick and I am a full stack web developer based
+              out of Toronto. I recently completed a web development course
+              through Lighthouse Labs, and am now looking
+            </p>
+          </motion.div>
+        </div>
       </div>
-    </div>
     </div>
   );
 }

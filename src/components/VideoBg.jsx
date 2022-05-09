@@ -8,7 +8,7 @@ export default function VideoBg() {
   
   
   return (
-    <div className="flex w-screen justify-center">
+    <div className="flex w-screen z-index-behind justify-center">
   
       <video
         className="toronto-video absolute w-screen object-cover shadow-xl h-screen"
