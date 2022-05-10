@@ -13,12 +13,12 @@ export default function About() {
       <ThreeObject />
 
       <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
-        <div className="border-r border-gray-300 w-1/2">
+        <div className="border-r-2 border-gray-300 w-1/2">
           <p className="mt-3 text-xl text-white">Skills</p>
           <ul className="p-12 px-24 text-gray-200">
             <Accordion.Wrapper>
-              <Accordion.Item className='border'>
-                <Accordion.Heading className="clicker border border-white rounded p-2">
+              <Accordion.Item>
+                <Accordion.Heading className="clicker border border-white rounded p-2 hover:bg-gray-800 ">
                   Frontend
                 </Accordion.Heading>
                 <Accordion.Child className="text-gray-400">
@@ -41,14 +41,29 @@ export default function About() {
                   Backend
                 </Accordion.Heading>
 
-                <Accordion.Child className="text-gray-400 bg-white rounded-t">
+                <Accordion.Child className="text-gray-400">
                   Node
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400 bg-white">
+                <Accordion.Child className="text-gray-400">
                   Express
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400 bg-white rounded-b">
+                <Accordion.Child className="text-gray-400">
                   Rails
+                </Accordion.Child>
+              </Accordion.Item>
+              <Accordion.Item>
+                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                  Databases
+                </Accordion.Heading>
+
+                <Accordion.Child className="text-gray-400">
+                  PostgreSQL
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  Firebase
+                </Accordion.Child>
+                <Accordion.Child className="text-gray-400">
+                  MongoDB
                 </Accordion.Child>
               </Accordion.Item>
               <Accordion.Item>
