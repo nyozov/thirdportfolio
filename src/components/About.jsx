@@ -7,11 +7,9 @@ import Accordion from "react-spring-accordion";
 
 export default function About() {
 
-
   return (
     <div>
       <ThreeObject />
-
       <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
         <div className="border-r-2 border-gray-300 w-1/2">
           <p className="mt-3 text-xl text-white">Skills</p>
