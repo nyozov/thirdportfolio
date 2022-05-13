@@ -1,8 +1,13 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col justify-center absolute bottom-0 bg-gray-800 w-screen  text-gray-200 p-6'
+    <motion.div
+    initial={{opacity: 0,}}
+    transition={{duration: 0.5, delay: 0.1}}
+    whileInView={{opacity: 1,}}
+    
+    className='flex flex-col justify-center absolute bottom-0 bg-gray-800 w-screen  text-gray-200 p-6'
     >
       
       <div className='w-full p-2 flex justify-center'>
@@ -15,6 +20,6 @@ export default function Footer() {
         <p className='cursor-pointer hover:underline'>Resume</p>
         </div>
       </div>
-      </div>
+      </motion.div>
   )
 }
