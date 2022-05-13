@@ -16,7 +16,7 @@ export default function About() {
           <ul className="p-12 px-24 text-gray-200">
             <Accordion.Wrapper>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 hover:bg-gray-800 ">
+                <Accordion.Heading className="clicker border border-white rounded p-2 hover:bg-gradient-to-r from-indigo-800 to-blue-800 ">
                   Frontend
                 </Accordion.Heading>
                 <Accordion.Child className="text-gray-400">
