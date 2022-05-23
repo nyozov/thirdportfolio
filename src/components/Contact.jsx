@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import Notification from "../components/Notification";
 
 export default function Contact() {
   const [charNumber, setCharNumber] = useState(200);
@@ -7,7 +8,7 @@ export default function Contact() {
     name: "",
     message: "",
   });
-
+  const [flag, setFlag] = useState(false);
   const handleWordCount = (e) => {
     const charCount = e.target.value.length;
     const charLeft = 200 - charCount;
@@ -44,6 +45,7 @@ export default function Contact() {
         if (res.data.success) {
           setLoading(false);
           setMode("success");
+          setFlag(true);
         } else {
           setMode("error");
         }
@@ -56,6 +58,8 @@ export default function Contact() {
   };
 
   return (
+    <div>
+     {!flag && 
     <div className="w-screen flex flex-col justify-center items-center">
       <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
         Contact
@@ -114,11 +118,12 @@ export default function Contact() {
         </div>
         <div className="flex justify-center items-center w-full">
           <button
+            onClick={() => setFlag(true)}
             type="submit"
             className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center  border-gray-200"
           >
-            {loading && <p>Send</p>}
-            {!loading && (
+            {!loading && <p>Send</p>}
+            {loading && (
               <svg
                 role="status"
                 class="w-[23.5px] h-[23.5px] mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
@@ -139,6 +144,9 @@ export default function Contact() {
           </button>
         </div>
       </form>
+    </div>
+     }
+    <Notification flag={flag} setFlag={setFlag}/>
     </div>
   );
 }

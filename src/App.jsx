@@ -14,6 +14,7 @@ import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedCursor from "react-animated-cursor";
 import Contact from "./components/Contact";
 
+
 function App() {
   const parallax = useRef(null);
 

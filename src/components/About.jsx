@@ -12,7 +12,7 @@ export default function About() {
       <ThreeObject />
       <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
         <div className="border-r-2 border-gray-300 w-1/2">
-          <p className="mt-3 text-xl text-white">Skills</p>
+          <p className="mt-3 text-xl font-bold text-white">Skills</p>
           <ul className="p-12 px-24 text-gray-200">
             <Accordion.Wrapper>
               <Accordion.Item>
@@ -90,7 +90,7 @@ export default function About() {
           </ul>
         </div>
         <div className="w-3/4 p-4 flex flex-col items-center">
-          <p className="text-xl text-white w-3/4 text-left">About</p>
+          <p className="text-xl font-bold text-white w-3/4 text-left">About</p>
           <motion.div
             className="w-full flex justify-center items-center"
             initial={{ opacity: 0, y: 100 }}
