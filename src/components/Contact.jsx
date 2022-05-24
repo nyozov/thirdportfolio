@@ -15,8 +15,7 @@ export default function Contact() {
     setCharNumber(charLeft);
   };
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState();
-  const [mode, setMode] = useState("");
+  
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -46,18 +45,17 @@ export default function Contact() {
           setTimeout(() => setLoading(false), 1000);
           setTimeout(() => setFlag(true), 1000);
         } else {
-          setMode("error");
+          console.log("email send error")
         }
       })
       .catch((err) => {
         setLoading(false);
         console.log(err);
-        setMode("error");
       });
   };
 
   return (
-    <div>
+    <div className='relative'>
       {!flag && (
         <div className="w-screen flex flex-col justify-center items-center">
           <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
@@ -66,7 +64,7 @@ export default function Contact() {
           <p className="text-gray-400 text-sm text-left p-2">
             Send me a message here or contact me though LinkedIn/Github
           </p>
-          <form onSubmit={handleSubmit} className="w-full max-w-lg mt-6">
+          <form className="w-full max-w-lg mt-6">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
@@ -117,6 +115,7 @@ export default function Contact() {
             </div>
             <div className="flex justify-center items-center w-full">
               <button
+              onClick={()=> setFlag(true)}
                
                 type="submit"
                 className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center  border-gray-200"
@@ -145,7 +144,10 @@ export default function Contact() {
           </form>
         </div>
       )}
+    
+
       <Notification flag={flag} setFlag={setFlag} />
+    
     </div>
   );
 }
