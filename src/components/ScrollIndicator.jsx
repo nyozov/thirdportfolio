@@ -4,7 +4,7 @@ export default function ScrollIndicator({ parallax }) {
   console.log('current =', parallax.current)
 
   return (
-    <div className="z-10 text-shadow text-white absolute left-4 h-screen flex justify-center items-center flex-col">
+    <div className="invisible md:visible z-10 text-shadow text-white absolute left-4 h-screen flex justify-center items-center flex-col">
      <div>
        ^
      </div>

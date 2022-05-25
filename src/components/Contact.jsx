@@ -64,7 +64,7 @@ export default function Contact() {
           <p className="text-gray-400 text-sm text-left p-2">
             Send me a message here or contact me though LinkedIn/Github
           </p>
-          <form className="w-full max-w-lg mt-6">
+          <form className="w-3/4  md:w-full max-w-lg mt-6">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
