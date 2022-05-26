@@ -7,7 +7,7 @@ const Projects = () => {
   const [more, setMore] = useState(false);
   return (
     <div classname="overflow-y-hidden">
-      <div className="mx-auto container f-f-p px-4 xl:px-0 py-24 max-w-[800px]">
+      <div className="mx-auto container f-f-p px-4 xl:px-0 py-24 max-w-[600px] md:max-w-[800px]">
         <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
           Projects
         </h1>
@@ -29,7 +29,7 @@ const Projects = () => {
                 />
               </motion.div>
 
-              <div className="sm:ml-16 md:ml-6 flex mt-16 p-2 md:p-0 text-left flex-col items-start md:mr-6">
+              <div className="sm:ml-12  flex mt-16 p-2 md:p-0 text-left flex-col items-start md:mr-6">
                 <h1 className="focus:outline-none text-md md:text-xl font-bold leading-3 text-white">
                   E-Tune
                 </h1>
@@ -62,7 +62,7 @@ const Projects = () => {
                   role="img"
                 >
                   <img
-                    className=" focus:outline-none mr-2 mt-6 md:mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
+                    className=" focus:outline-none mr-2 mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
                     src={myProjects[2].img}
                     alt="therapify image"
                   />
@@ -107,7 +107,7 @@ const Projects = () => {
                 role="img"
               >
                 <img
-                  className="focus:outline-none shadow mt-6 w-[200px] md:w-[350px]"
+                  className="focus:outline-none shadow mt-12 md:mt-6 w-[200px] md:w-[350px]"
                   src={myProjects[1].img}
                   alt="etune image"
                 />
