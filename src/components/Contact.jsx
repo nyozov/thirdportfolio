@@ -74,7 +74,7 @@ export default function Contact() {
                   E-mail
                 </label>
                 <input
-                  className="appearance-none block w-full bg-transparent text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                  className="appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
                   onChange={handleChange}
                   type="text"
                   id="name"
@@ -94,7 +94,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className=" no-resize appearance-none block w-full bg-transparent text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 h-48 resize-none"
+                  className=" no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 h-48 resize-none"
                   onChange={handleChange}
                   maxLength="200"
                   id="message"
@@ -118,7 +118,7 @@ export default function Contact() {
               onClick={()=> setFlag(true)}
                
                 type="submit"
-                className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center  border-gray-200"
+                className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex justify-center w-36 items-center  white-glassmorphism"
               >
                 {!loading && <p>Send</p>}
                 {loading && (

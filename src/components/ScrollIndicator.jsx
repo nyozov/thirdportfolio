@@ -10,19 +10,19 @@ export default function ScrollIndicator({ parallax }) {
      </div>
       <div
         onClick={() => parallax.current.scrollTo(0)}
-        className="border border-white w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
+        className="white-glassmorphism w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
       ></div>
       <div
         onClick={() => parallax.current.scrollTo(1)}
-        className="mt-[5px] border border-white w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
+        className="mt-[5px] white-glassmorphism w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
       />
       <div
         onClick={() => parallax.current.scrollTo(2)}
-        className="mt-[5px] border border-white w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
+        className="mt-[5px] white-glassmorphism w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
       ></div>
       <div
         onClick={() => parallax.current.scrollTo(3)}
-        className="mt-[5px] border border-white w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
+        className="mt-[5px] white-glassmorphism w-[10px] h-[10px] rounded-full hover:bg-gray-300 cursor-pointer"
       ></div>
         <div>
        ⌄

@@ -14,7 +14,7 @@ export default function ThreeObject() {
     transition={{duration: 1, delay: 0.1}}
     whileInView={{opacity: 1}}
     
-    className="w-screen mb-6 white-glassmorphism p-6">
+    className="w-screen mb-6 bg-transparent p-6">
     <Marquee speed={40} gradient={false} className='w-screen'>
       <div className='w-full grid grid-cols-4 gap-4'>
    
