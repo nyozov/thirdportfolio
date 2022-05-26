@@ -8,89 +8,95 @@ import Accordion from "react-spring-accordion";
 export default function About() {
 
   return (
-    <div>
+    <div className='flex justify-center items-center flex-col'>
       <ThreeObject />
-      <div className="flex justify-between p-6 bg-tranparent w-screen h-full">
-        <div className="border-r-2 border-gray-300 w-1/2">
-          <p className="mt-3 text-xl font-bold text-white">Skills</p>
-          <ul className="p-12 px-24 text-gray-200">
+      <div className="flex justify-between mt-1 p-6 white-glassmorphism w-[98vw] shadow rounded-lg md:w-3/4 w-screen h-full">
+        <div className="w-1/2">
+          
+          <ul className="p-12 px-24 text-gray-600">
             <Accordion.Wrapper>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 hover:bg-gradient-to-r from-indigo-800 to-blue-800 ">
+                <Accordion.Heading className="clicker shadow-md white-glassmorphism text-white rounded p-2 ">
                   Frontend
                 </Accordion.Heading>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   React
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   jQuery
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Tailwind
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Axios
                 </Accordion.Child>
 
                 
               </Accordion.Item>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                <Accordion.Heading className="clicker shadow-md white-glassmorphism rounded p-2 mt-3">
                   Backend
                 </Accordion.Heading>
 
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Node
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Express
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Rails
                 </Accordion.Child>
               </Accordion.Item>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                <Accordion.Heading className="clicker shadow-md white-glassmorphism rounded p-2 mt-3">
                   Databases
                 </Accordion.Heading>
 
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   PostgreSQL
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Firebase
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   MongoDB
                 </Accordion.Child>
               </Accordion.Item>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">UI/UX</Accordion.Heading>
+                <Accordion.Heading className="clicker shadow-md white-glassmorphism rounded p-2 mt-3">UI/UX</Accordion.Heading>
 
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Figma
                 </Accordion.Child>
               </Accordion.Item>
               <Accordion.Item>
-                <Accordion.Heading className="clicker border border-white rounded p-2 mt-3">
+                <Accordion.Heading className="clicker shadow-md white-glassmorphism rounded p-2 mt-3">
                   Unit Testing
                 </Accordion.Heading>
 
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Cypress
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Mocha/Chai
                 </Accordion.Child>
-                <Accordion.Child className="text-gray-400">
+                <Accordion.Child className="text-gray-800">
                   Jest
                 </Accordion.Child>
               </Accordion.Item>
             </Accordion.Wrapper>
           </ul>
         </div>
+        <div>
+
+        <div className='h-1/4 text-black border-2 rounded-full border-white w-[0px]'/>
+        <h2 className=' text-lg font-bold h-[75px] text-white -rotate-90'>About</h2>
+        <div className='h-1/2 text-black border-2 rounded-full border-white w-[0px]'/>
+        </div>
         <div className="w-3/4 p-4 flex flex-col items-center">
-          <p className="text-xl font-bold text-white w-3/4 text-left">About</p>
+        
           <motion.div
             className="w-full flex justify-center items-center"
             initial={{ opacity: 0, y: 100 }}
