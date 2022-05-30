@@ -9,9 +9,8 @@ export default function About() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className='opacity-10'>
-
-      <ThreeObject />
+      <div className="opacity-10">
+        <ThreeObject />
       </div>
       <div className="flex justify-between mt-1 p-6 white-glassmorphism w-[98vw] shadow rounded-lg md:w-3/4 w-screen h-full">
         <div className="w-1/2">
@@ -42,15 +41,27 @@ export default function About() {
         <div>
           <div className="h-1/4 text-black border-2 rounded-full border-white w-[0px]" />
           {page === "about" && (
-            <h2 className=" text-lg font-bold h-[75px] text-white -rotate-90">
-              About
-            </h2>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+            >
+              <h2 className=" text-lg font-bold h-[75px] text-white -rotate-90">
+                About
+              </h2>
+            </motion.div>
           )}
 
           {page === "skills" && (
-            <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
-              Skills
-            </h2>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+            >
+              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
+                Skills
+              </h2>
+            </motion.div>
           )}
           <div className="h-1/2 text-black border-2 rounded-full border-white w-[0px]" />
         </div>
