@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedCursor from "react-animated-cursor";
 import Contact from "./components/Contact";
+import ThreeObject from "./components/ThreeObject";
 
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
           factor={1}
           offset={1}
           speed={0.5}
-        ></ParallaxLayer>
+        >    <ThreeObject /></ParallaxLayer>
         <ParallaxLayer
           className="flex justify-center rounded-lg  bg-transparent"
           factor={1}
