@@ -9,7 +9,7 @@ export default function About() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="opacity-10">
+      <div className="opacity-50">
         <ThreeObject />
       </div>
       <div className="flex justify-between mt-1 p-6 white-glassmorphism w-[98vw] shadow rounded-lg md:w-3/4 w-screen h-full">
@@ -19,8 +19,8 @@ export default function About() {
               onClick={() => setPage("about")}
               className={
                 page === "about"
-                  ? "clicker shadow-md white-glassmorphism text-white rounded p-2 "
-                  : "clicker shadow-md white-glassmorphism text-gray-600 rounded p-2 "
+                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-white rounded p-2 "
+                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-gray-600 rounded p-2 "
               }
             >
               About
@@ -30,11 +30,21 @@ export default function About() {
               onClick={() => setPage("skills")}
               className={
                 page === "skills"
-                  ? "clicker shadow-md white-glassmorphism text-white rounded p-2 mt-3 "
-                  : "clicker shadow-md white-glassmorphism text-gray-600 rounded p-2 mt-3"
+                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-white rounded p-2 mt-3 "
+                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-gray-600 rounded p-2 mt-3"
               }
             >
               Skills
+            </div>
+            <div
+              onClick={() => setPage("education")}
+              className={
+                page === "education"
+                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-white rounded p-2 mt-3"
+                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-gray-600 rounded p-2 mt-3"
+              }
+            >
+              Education
             </div>
           </ul>
         </div>
@@ -73,7 +83,7 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <p className="w-3/4  font-thin text-gray-300 text-left mt-3">
+              <p className="mt-3 text-sm leading-1 text-left text-gray-400">
                 Hi ✋, my name is Nick and I am a full stack web developer based
                 out of Toronto. I recently completed a web development course
                 through Lighthouse Labs, and am now looking

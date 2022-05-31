@@ -19,7 +19,6 @@ const Projects = () => {
                 transition={{ delay: 0.1, duration: 0.5 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 className="img-hover-zoom"
-                
                 role="img"
               >
                 <img
@@ -40,7 +39,13 @@ const Projects = () => {
                       className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
-                        <div className={badge==="React" ? "h-1 w-1 rounded-full bg-indigo-700 mr-1" : "h-1 w-1 rounded-full bg-green-500 mr-1"} />
+                        <div
+                          className={
+                            badge === "React"
+                              ? "h-1 w-1 rounded-full bg-indigo-700 mr-1"
+                              : "h-1 w-1 rounded-full bg-green-500 mr-1"
+                          }
+                        />
                         <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
                           {badge}
                         </span>
@@ -58,7 +63,6 @@ const Projects = () => {
                   transition={{ delay: 0.1, duration: 0.5 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   className="img-hover-zoom"
-                  
                   role="img"
                 >
                   <img
@@ -86,7 +90,13 @@ const Projects = () => {
                       className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
-                        <div className={badge==="React" ? "h-1 w-1 rounded-full bg-indigo-700 mr-1" : "h-1 w-1 rounded-full bg-orange-500 mr-1"} />
+                        <div
+                          className={
+                            badge === "React"
+                              ? "h-1 w-1 rounded-full bg-indigo-700 mr-1"
+                              : "h-1 w-1 rounded-full bg-orange-500 mr-1"
+                          }
+                        />
                         <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
                           {badge}
                         </span>
@@ -112,7 +122,6 @@ const Projects = () => {
                   alt="etune image"
                 />
               </motion.div>
-            
 
               <div className="text-left border-white flex mt-12 flex-col items-start  w-11/12 md:w-8/12">
                 <h1 className="focus:outline-none md:text-xl font-bold leading-5 text-white">
@@ -125,7 +134,13 @@ const Projects = () => {
                       className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
-                        <div className={badge==="React" ? "h-1 w-1 rounded-full bg-indigo-700 mr-1" : "h-1 w-1 rounded-full bg-green-500 mr-1"} />
+                        <div
+                          className={
+                            badge === "React"
+                              ? "h-1 w-1 rounded-full bg-indigo-700 mr-1"
+                              : "h-1 w-1 rounded-full bg-green-500 mr-1"
+                          }
+                        />
                         <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
                           {badge}
                         </span>
@@ -137,8 +152,6 @@ const Projects = () => {
                   {myProjects[2].desc}
                 </h2>
               </div>
-
-              
             </div>
           </div>
         </div>

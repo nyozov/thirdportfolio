@@ -15,7 +15,7 @@ export default function ThreeObject() {
     whileInView={{opacity: 1}}
     
     className="w-screen mb-6 bg-transparent p-6">
-    <Marquee speed={40} gradient={false} className='w-screen'>
+    <Marquee speed={40} pauseOnHover gradient={false} className='w-screen'>
       <div className='w-full grid grid-cols-4 gap-4'>
    
       <img src={'https://miro.medium.com/max/1400/1*UvWOnSlWP7AbbOtSVUeHMg.png'} className='w-[45px] h-[45px]'/>
@@ -28,7 +28,7 @@ export default function ThreeObject() {
 
    
     </Marquee>
-    <Marquee speed={40} direction="right" gradient={false} >
+    <Marquee speed={40} direction="right" pauseOnHover gradient={false} >
       <div className='w-full grid grid-cols-4 gap-4 mt-4'>
 
     <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC3rW8XsouaS0ZcaBsSh7Da2J0YO3lioCR-0i9JbhUU37v_5SknvPzXBFHyzsM8tNlS8k&usqp=CAU'} className='w-[45px] h-[45px]'/>

@@ -60,7 +60,7 @@ export default function Navbar({ parallax }) {
           <div
             id="bgIcon"
             onClick={() => setshow(!show)}
-            className={`focus:outline-none focus:ring-2 shadow-md p-[2px] rounded hover:shadow-2xl focus:ring-offset-2 focus:ring-gray-800  justify-center items-center sm:hidden cursor-pointer`}
+            className={`focus:outline-none focus:ring-2 p-[2px] rounded hover:shadow-2xl focus:ring-offset-2 focus:ring-gray-800  justify-center items-center sm:hidden cursor-pointer`}
           >
             <svg
               className={`${show ? "hidden" : ""}`}
@@ -127,19 +127,22 @@ export default function Navbar({ parallax }) {
           } sm:hidden bg-transparent p-6 rounded-full backdrop-blur mt-4 mx-auto`}
         >
           <div className="flex flex-row items-center justify-center space-x-6">
+          <a href="https://github.com/nyozov" target="_blank" >
             <div className="text-white shadow-md hover:shadow-2xl cursor-pointer p-[2px] rounded">
               <AiFillGithub size={24} />
             </div>
-
+            </a>
+            <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
             <div className="text-white shadow-md hover:shadow-2xl cursor-pointer p-[2px] rounded">
               <AiFillLinkedin size={24} />
             </div>
+            </a>
           </div>
           <div className="flex flex-col gap-4 mt-4 w-80 mx-auto ">
-            <button className="rounded-md flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:bg-gray-500  border border-gray-200  duration-150 justify-center items-center">
+            <button  onClick={() => parallax.current.scrollTo(3)} className="rounded-md flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:bg-gray-500  border border-gray-200  duration-150 justify-center items-center">
               Projects
             </button>
-            <button className="font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent py-2 rounded-md hover:border-gray-200">
+            <button onClick={() => parallax.current.scrollTo(3)} className="font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent py-2 rounded-md hover:border-gray-200">
               Contact Me
             </button>
           </div>

@@ -89,7 +89,7 @@ function App() {
           factor={1}
           offset={1}
           speed={0.5}
-        >    <ThreeObject /></ParallaxLayer>
+        >    </ParallaxLayer>
         <ParallaxLayer
           className="flex justify-center rounded-lg  bg-transparent"
           factor={1}
