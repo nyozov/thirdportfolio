@@ -10,17 +10,18 @@ export default function About() {
   return (
     <div className="flex justify-center items-center flex-col">
       <div className="opacity-50">
-        <ThreeObject />
+       
+        {/* <ThreeObject /> */}
       </div>
-      <div className="flex justify-between mt-1 p-6 white-glassmorphism w-[98vw] shadow rounded-lg md:w-3/4 w-screen h-full">
-        <div className="w-1/2">
-          <ul className="p-12 px-24 text-gray-600">
+      <div className="flex mt-1 p-6 white-glassmorphism shadow rounded-lg w-3/4  h-full">
+        <div className="">
+          <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
             <div
               onClick={() => setPage("about")}
               className={
                 page === "about"
-                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-white rounded p-2 "
-                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-gray-600 rounded p-2 "
+                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 w-24 text-white rounded p-2 "
+                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 w-24 text-gray-600 rounded p-2 "
               }
             >
               About
@@ -30,13 +31,13 @@ export default function About() {
               onClick={() => setPage("skills")}
               className={
                 page === "skills"
-                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-white rounded p-2 mt-3 "
-                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 text-gray-600 rounded p-2 mt-3"
+                  ? "clicker shadow-md white-glassmorphism hover:bg-gray-500 w-24 text-white rounded p-2 mt-3 "
+                  : "clicker shadow-md white-glassmorphism hover:bg-gray-500 w-24 text-gray-600 rounded p-2 mt-3"
               }
             >
               Skills
             </div>
-            <div
+            {/* <div
               onClick={() => setPage("education")}
               className={
                 page === "education"
@@ -45,7 +46,7 @@ export default function About() {
               }
             >
               Education
-            </div>
+            </div> */}
           </ul>
         </div>
         <div>
@@ -56,7 +57,7 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
                 About
               </h2>
             </motion.div>
@@ -75,10 +76,12 @@ export default function About() {
           )}
           <div className="h-1/2 text-black border-2 rounded-full border-white w-[0px]" />
         </div>
-        <div className="w-3/4 p-4 flex flex-col items-center">
+
+
+        <div className="w-[98vw] max-w-[960px] p-4 flex flex-col items-center">
           {page === "about" && (
             <motion.div
-              className="w-full flex justify-center items-center"
+              className="w-full flex justify-center items-center border"
               initial={{ opacity: 0, y: 100 }}
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Skills() {
   return (
     <motion.div
-      className="w-3/4 flex flex-col justify-start items-start"
+      className=" flex flex-col w-full p-4 border"
       initial={{ opacity: 0, y: 100 }}
       transition={{ delay: 0.1, duration: 0.5 }}
       whileInView={{ opacity: 1, y: 0 }}
