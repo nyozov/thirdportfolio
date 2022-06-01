@@ -20,12 +20,12 @@ export default function Navbar({ parallax }) {
         <div className="flex justify-between ">
           <div className="hidden sm:flex flex-row items-center space-x-6">
             <a href="https://github.com/nyozov" target="_blank">
-              <div className="text-white shadow-md white-glassmorphism hover:shadow-2xl cursor-pointer p-[2px] rounded">
+              <div className="text-white shadow-md white-glassmorphism hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
                 <AiFillGithub size={24} />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
-              <div className="text-white shadow-md hover:shadow-2xl white-glassmorphism cursor-pointer p-[2px] rounded">
+              <div className="text-white shadow-md hover:border-gray-200 duration-150 white-glassmorphism cursor-pointer p-[2px] rounded">
                 <AiFillLinkedin size={24} />
               </div>
             </a>
@@ -56,7 +56,7 @@ export default function Navbar({ parallax }) {
             </div>
             <button
               onClick={() => parallax.current.scrollTo(3)}
-              className=" font-semibold text-white px-3 shadow-md flex white-glassmorphism justify-center items-center border border-transparent hover:border-white"
+              className=" font-semibold text-white px-3 shadow-md flex white-glassmorphism justify-center items-center hover:border-gray-200 duration-150"
             >
               Contact Me
             </button>

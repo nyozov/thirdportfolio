@@ -15,7 +15,6 @@ export default function Contact() {
     setCharNumber(charLeft);
   };
   const [loading, setLoading] = useState(false);
-  
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -46,7 +45,7 @@ export default function Contact() {
           setTimeout(() => setLoading(false), 1000);
           setTimeout(() => setFlag(true), 1000);
         } else {
-          console.log("email send error")
+          console.log("email send error");
         }
       })
       .catch((err) => {
@@ -56,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <div className='relative'>
+    <div className="relative">
       {!flag && (
         <div className="w-screen flex flex-col justify-center items-center">
           <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
@@ -65,7 +64,11 @@ export default function Contact() {
           <p className="text-gray-400 text-sm text-left p-2">
             Send me a message here or contact me though LinkedIn/Github
           </p>
-          <form onSubmit={handleSubmit} className="w-3/4  md:w-full max-w-lg mt-6">
+          <form
+            onSubmit={handleSubmit}
+            className="w-3/4  md:w-full max-w-lg mt-6"
+            autoComplete="off"
+          >
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
@@ -75,7 +78,7 @@ export default function Contact() {
                   E-mail
                 </label>
                 <input
-                  className="appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500"
+                  className="appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150"
                   onChange={handleChange}
                   type="text"
                   id="name"
@@ -95,7 +98,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className=" no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500 h-48 resize-none"
+                  className=" no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150 h-48 resize-none"
                   onChange={handleChange}
                   maxLength="200"
                   id="message"
@@ -116,10 +119,8 @@ export default function Contact() {
             </div>
             <div className="flex justify-center items-center w-full">
               <button
-              
-               
                 type="submit"
-                className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex justify-center w-36 items-center  white-glassmorphism"
+                className="clicker border border-white font-semibold text-white p-3 hover:border-gray-200 duration-150 shadow-md flex justify-center w-36 items-center  white-glassmorphism"
               >
                 {!loading && <p>Send</p>}
                 {loading && (
@@ -145,10 +146,8 @@ export default function Contact() {
           </form>
         </div>
       )}
-    
 
       <Notification flag={flag} setFlag={setFlag} />
-    
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function About() {
 
   return (
     <div className="flex justify-center  white-glassmorphism md:max-w-[960px] items-center flex-col">
-      <div className="flex mt-1 p-6 shadow rounded-lg w-3/4  h-full">
+      <div className="flex mt-1 p-6  rounded-lg w-3/4  h-full">
         <div className="">
           <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
             <div
