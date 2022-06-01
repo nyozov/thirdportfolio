@@ -8,12 +8,12 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedCursor from "react-animated-cursor";
 import Contact from "./components/Contact";
-import ThreeObject from "./components/ThreeObject";
+
 
 function App() {
   const parallax = useRef(null);
