@@ -15,7 +15,6 @@ import AnimatedCursor from "react-animated-cursor";
 import Contact from "./components/Contact";
 import ThreeObject from "./components/ThreeObject";
 
-
 function App() {
   const parallax = useRef(null);
 
@@ -28,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="App bg-gradient">
+    <div className="App">
       <AnimatedCursor
         innerSize={8}
         outerSize={8}
@@ -84,14 +83,11 @@ function App() {
             <Title />
           </motion.div>
         </ParallaxLayer>
+        <ParallaxLayer className="bg-about" factor={1} offset={1} speed={0.5}>
+          {" "}
+        </ParallaxLayer>
         <ParallaxLayer
-          className="bg-about"
-          factor={1}
-          offset={1}
-          speed={0.5}
-        >    </ParallaxLayer>
-        <ParallaxLayer
-          className="flex justify-center rounded-lg  bg-transparent"
+          className="flex justify-center rounded-lg  "
           factor={1}
           offset={1}
           speed={2}

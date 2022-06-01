@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { HiLocationMarker } from "react-icons/hi";
-export default function Title({ scrollPosition }) {
+export default function Title() {
   return (
     <div className="flex justify-center items-center h-screen w-screen">
       <div className="flex w-screen flex-col h-screen items-center justify-center ">
         <div className="flex z-index-behind flex-col h-full justify-center items-center absolute top-0">
           <h1 className="text-white text-shadow font-bold text-3xl">
-            <span className={`mt=[${scrollPosition}px]`}>F</span>ull Stack Web
+            <span className=''>F</span>ull Stack Web
             Developer
           </h1>
           <span className="text-white">/</span>
@@ -21,7 +21,7 @@ export default function Title({ scrollPosition }) {
             href="https://resume.creddle.io/resume/dykdi4p41za"
             target="_blank"
           >
-            <div className="bg-button shadow-md text-white clicker p-2 px-4 mt-4 border border-transparent hover:border-gray-200">
+            <div className="white-glassmorphism shadow-md text-white clicker p-2 px-4 mt-4  hover:border-white">
               My Resume
             </div>
           </a>

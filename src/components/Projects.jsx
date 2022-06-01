@@ -1,6 +1,5 @@
 import myProjects from "./myProjects";
 import { motion } from "framer-motion";
-import { ParallaxLayer } from "@react-spring/parallax";
 import { useState } from "react";
 
 const Projects = () => {
@@ -14,19 +13,21 @@ const Projects = () => {
         <div className="md:mt-24 f-f-p">
           <div className=" flex justify-center w-full">
             <div className="flex flex-col items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
-              <motion.div
-                initial={{ y: 100 }}
-                transition={{ delay: 0.1, duration: 0.5 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="img-hover-zoom"
-                role="img"
-              >
-                <img
-                  className=" focus:outline-none mr-2 mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
-                  src={myProjects[0].img}
-                  alt="gallery image"
-                />
-              </motion.div>
+              <a href={myProjects[0].siteUrl} target="_blank">
+                <motion.div
+                  initial={{ y: 100 }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="img-hover-zoom"
+                  role="img"
+                >
+                  <img
+                    className=" focus:outline-none mr-2 mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
+                    src={myProjects[0].img}
+                    alt="gallery image"
+                  />
+                </motion.div>
+              </a>
 
               <div className="sm:ml-12  flex mt-16 p-2 md:p-0 text-left flex-col items-start md:mr-6">
                 <h1 className="focus:outline-none text-md md:text-xl font-bold leading-3 text-white">
@@ -58,19 +59,21 @@ const Projects = () => {
                 </h2>
               </div>
               <div aria-label="transactions" role="img">
-                <motion.div
-                  initial={{ y: 100 }}
-                  transition={{ delay: 0.1, duration: 0.5 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  className="img-hover-zoom"
-                  role="img"
-                >
-                  <img
-                    className=" focus:outline-none mr-2 mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
-                    src={myProjects[2].img}
-                    alt="therapify image"
-                  />
-                </motion.div>
+                <a href={myProjects[2].url} target="_blank">
+                  <motion.div
+                    initial={{ y: 100 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="img-hover-zoom"
+                    role="img"
+                  >
+                    <img
+                      className=" focus:outline-none mr-2 mt-12 shadow w-[220px] md:w-[350px] cursor-pointer"
+                      src={myProjects[2].img}
+                      alt="therapify image"
+                    />
+                  </motion.div>
+                </a>
               </div>
               <img
                 className="hidden md:block absolute right-0 top-0 -mt-2 -mr-1"
@@ -109,19 +112,21 @@ const Projects = () => {
                 </h2>
                 <div className="invisible md:visible border border-blue-300 w-1/4 ml-[-52px] mt-2 " />
               </div>
-              <motion.div
-                initial={{ y: 100 }}
-                transition={{ delay: 0.1, duration: 0.5 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="img-hover-zoom cursor-pointer"
-                role="img"
-              >
-                <img
-                  className="focus:outline-none shadow mt-12 md:mt-6 w-[200px] md:w-[350px]"
-                  src={myProjects[1].img}
-                  alt="etune image"
-                />
-              </motion.div>
+              <a href={myProjects[1].siteUrl} target="_blank">
+                <motion.div
+                  initial={{ y: 100 }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="img-hover-zoom cursor-pointer"
+                  role="img"
+                >
+                  <img
+                    className="focus:outline-none shadow mt-12 md:mt-6 w-[200px] md:w-[350px]"
+                    src={myProjects[1].img}
+                    alt="etune image"
+                  />
+                </motion.div>
+              </a>
 
               <div className="text-left border-white flex mt-12 flex-col items-start  w-11/12 md:w-8/12">
                 <h1 className="focus:outline-none md:text-xl font-bold leading-5 text-white">
@@ -160,7 +165,7 @@ const Projects = () => {
         {!more && (
           <div
             onClick={() => setMore(true)}
-            className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border-gray-200"
+            className="clicker  font-semibold text-white p-3 hover:border-white shadow-md flex white-glassmorphism justify-center w-36 items-center border-gray-200"
           >
             See More
           </div>
@@ -168,7 +173,7 @@ const Projects = () => {
         {more && (
           <div
             onClick={() => setMore(false)}
-            className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex bg-div justify-center w-36 items-center border-gray-200"
+            className="clicker border border-white font-semibold text-white p-3 hover:border-white shadow-md flex white-glassmorphism justify-center w-36 items-center border-gray-200"
           >
             See Less
           </div>

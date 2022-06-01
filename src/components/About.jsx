@@ -8,12 +8,12 @@ export default function About() {
   const [page, setPage] = useState("about");
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center max-w-[960px] items-center flex-col">
       <div className="opacity-50">
        
-        {/* <ThreeObject /> */}
+       
       </div>
-      <div className="flex mt-1 p-6 white-glassmorphism shadow rounded-lg w-3/4  h-full">
+      <div className="flex mt-1 p-6 shadow rounded-lg w-3/4  h-full">
         <div className="">
           <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
             <div
@@ -57,7 +57,7 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg font-bold h-[75px] text-white -rotate-90">
                 About
               </h2>
             </motion.div>

@@ -15,9 +15,15 @@ export default function Footer() {
       </div>
       <div className='flex  justify-evenly w-full h-full items-center'>
        <div className='flex justify-between px-4  w-[200px]'>
+       <a href="https://www.linkedin.com/in/nyozov/" target="_blank" >
         <p className='cursor-pointer hover:underline'>LinkedIn</p>
+        </a>
+        <a href="https://github.com/nyozov" target="_blank" >
         <p className='cursor-pointer hover:underline'>Github</p>
+        </a>
+        <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank" >
         <p className='cursor-pointer hover:underline'>Resume</p>
+        </a>
         </div>
       </div>
       </motion.div>

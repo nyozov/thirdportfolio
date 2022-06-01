@@ -42,6 +42,7 @@ export default function Contact() {
       })
       .then((res) => {
         if (res.data.success) {
+          setCharNumber(200);
           setTimeout(() => setLoading(false), 1000);
           setTimeout(() => setFlag(true), 1000);
         } else {
@@ -64,7 +65,7 @@ export default function Contact() {
           <p className="text-gray-400 text-sm text-left p-2">
             Send me a message here or contact me though LinkedIn/Github
           </p>
-          <form className="w-3/4  md:w-full max-w-lg mt-6">
+          <form onSubmit={handleSubmit} className="w-3/4  md:w-full max-w-lg mt-6">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
@@ -115,7 +116,7 @@ export default function Contact() {
             </div>
             <div className="flex justify-center items-center w-full">
               <button
-              onClick={()=> setFlag(true)}
+              
                
                 type="submit"
                 className="clicker border border-white font-semibold text-white p-3 hover:bg-gray-500 shadow-md flex justify-center w-36 items-center  white-glassmorphism"
