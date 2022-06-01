@@ -7,15 +7,15 @@ export default function Title() {
           <h1 className="text-white text-shadow font-bold text-3xl">
             <span className="">F</span>ull Stack Web Developer
           </h1>
-          <span className="text-white">/</span>
-          <h1 className="text-white text-shadow text-2xl">UI/UX Designer</h1>
-          <div className="flex z-20 mt-2 justify-center items-center w-screen text-white text-shadow text-xl">
+          <span className="text-transparent">/</span>
+          <h1 className="text-transparent text-2xl">UI/UX Designer</h1>
+          <div className="flex z-20 mt-2 justify-center items-center w-screen text-transparent text-xl">
             <HiLocationMarker className="w-8" />
             <h1 className="ml-[-5px]">Toronto</h1>
           </div>
         <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank">
           {" "}
-          <div className="  white-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-white">
+          <div className="  dark-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-white">
             My Resume
           </div>
         </a>

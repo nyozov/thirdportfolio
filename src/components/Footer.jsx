@@ -7,10 +7,10 @@ export default function Footer() {
     transition={{duration: 0.5, delay: 0.1}}
     whileInView={{opacity: 1,}}
     
-    className='flex flex-col h-[75px] justify-center absolute bottom-0 bg-gray-800 w-screen  text-gray-200 p-6'
+    className='flex flex-col justify-center absolute bottom-0 bg-transparent w-screen  text-gray-200 p-6'
     >
       
-      <div className='w-full p-2 flex justify-center'>
+      <div className='w-full flex justify-center'>
       ✌️
       </div>
       <div className='flex  justify-evenly w-full h-full items-center'>

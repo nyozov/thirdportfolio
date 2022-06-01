@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedCursor from "react-animated-cursor";
 import Contact from "./components/Contact";
-
+import { HiLocationMarker } from "react-icons/hi";
 
 function App() {
   const parallax = useRef(null);
@@ -60,17 +60,27 @@ function App() {
         style={{ top: "0", left: "0" }}
       >
         <motion.div
-          className="h-screen w-screen flex justify-center items-center"
+          className="h-screen w-screen relative"
           initial={{ opacity: 0, x: -500 }}
           transition={{ delay: 1 }}
           animate={{ opacity: 1, x: 0, duration: 4 }}
         >
+      
           <ParallaxLayer
             factor={0.1}
             offset={0}
             speed={1}
-            className="bg-about mt-[36vh] ml-[30vw] max-w-[350px]"
-          />
+            className="bg-transparent rounded-lg flex justify-center items-center flex-col max-w-[300px] m-auto absolute"
+          >
+                <span className="text-white text-xl text-shadow">+</span>
+                  <h1 className="text-white text-shadow text-2xl">UI/UX Designer</h1>
+          <div className="flex z-20 mt-2 justify-center items-center w-screen text-white text-shadow text-xl">
+            <HiLocationMarker className="w-8" />
+            <h1 className="ml-[-5px]">Toronto</h1>
+          </div>
+            </ParallaxLayer>
+
+         
         </motion.div>
         <ParallaxLayer factor={1} offset={0} speed={2.5}>
           <motion.div
@@ -92,6 +102,8 @@ function App() {
           offset={1}
           speed={2}
         >
+
+        
           <About />
         </ParallaxLayer>
 

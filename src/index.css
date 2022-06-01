@@ -13,8 +13,6 @@ body {
   font-family: Neue-Montreal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(177,177,195,1) 84%, rgba(0,255,250,1) 100%);
 
  
 }
@@ -25,7 +23,12 @@ code {
 }
 
 
-
+.inset-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .video-bg{
   z-index: -1;
 }
@@ -49,7 +52,8 @@ code {
 
 .toronto-video {
   z-index: -5;
-  filter: brightness(75%);
+  filter: brightness(85%);
+ 
 }
 
 .z-index-behind{
@@ -111,6 +115,14 @@ code {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
+.dark-glassmorphism {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 .eth-card {
   background-color:#a099ff;
   background-image: 

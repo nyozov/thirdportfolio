@@ -1,33 +1,38 @@
 import React, { useState, useRef } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar({ parallax }) {
-  const ref = useRef();
+  const spring = {
+    type: "spring",
+    damping: 15,
+    stiffness: 100,
+    duration: 1,
+    delay: 0.1,
+  };
 
   const [show, setshow] = useState(false);
   return (
-    <div className="z-10 bg-transparent ">
+    <div className="z-20 bg-transparent ">
       <nav className="2xl:container 2xl:mx-auto sm:py-6 sm:px-7 py-5 px-4">
         {/* For large and Medium-sized Screen */}
         <div className="flex justify-between ">
           <div className="hidden sm:flex flex-row items-center space-x-6">
-            <a href="https://github.com/nyozov" target="_blank" >
+            <a href="https://github.com/nyozov" target="_blank">
               <div className="text-white shadow-md white-glassmorphism hover:shadow-2xl cursor-pointer p-[2px] rounded">
                 <AiFillGithub size={24} />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
-            <div className="text-white shadow-md hover:shadow-2xl white-glassmorphism cursor-pointer p-[2px] rounded">
-              <AiFillLinkedin size={24} />
-            </div>
-
+              <div className="text-white shadow-md hover:shadow-2xl white-glassmorphism cursor-pointer p-[2px] rounded">
+                <AiFillLinkedin size={24} />
+              </div>
             </a>
-
           </div>
-          <div className=" flex space-x-3 items-center text-white">
+          <div className="sm:ml-28 flex space-x-3 items-center text-white">
             <svg
-              className="name-icon"
+              className="name-icon eth-card rounded-full"
               width={34}
               height={34}
               viewBox="0 0 34 34"
@@ -120,33 +125,49 @@ export default function Navbar({ parallax }) {
           </div>
         </div>
         {/* Mobile and small-screen devices (toggle Menu) */}
-        <div
+        <AnimatePresence>
+
+      
+        {show && (
+        <motion.div
+        initial={{opacity:0, y:-100}}
+        transition={spring}
+        animate={{opacity:1, y: 0}}
+        exit={{opacity:0, y: -220}}
           id="MobileNavigation"
           className={`${
             show ? "block" : "hidden"
-          } sm:hidden bg-transparent p-6 rounded-full backdrop-blur mt-4 mx-auto`}
+          } sm:hidden p-6 rounded-full backdrop-blur mt-4 mx-auto`}
         >
           <div className="flex flex-row items-center justify-center space-x-6">
-          <a href="https://github.com/nyozov" target="_blank" >
-            <div className="text-white shadow-md hover:shadow-2xl cursor-pointer p-[2px] rounded">
-              <AiFillGithub size={24} />
-            </div>
+            <a href="https://github.com/nyozov" target="_blank">
+              <div className="text-white shadow-md white-glassmorphism hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
+                <AiFillGithub size={24} />
+              </div>
             </a>
             <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
-            <div className="text-white shadow-md hover:shadow-2xl cursor-pointer p-[2px] rounded">
-              <AiFillLinkedin size={24} />
-            </div>
+              <div className="text-white white-glassmorphism shadow-md hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
+                <AiFillLinkedin size={24} />
+              </div>
             </a>
           </div>
           <div className="flex flex-col gap-4 mt-4 w-80 mx-auto ">
-            <button  onClick={() => parallax.current.scrollTo(3)} className="rounded-md flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:bg-gray-500  border border-gray-200  duration-150 justify-center items-center">
+            <button
+              onClick={() => parallax.current.scrollTo(2)}
+              className="rounded-md white-glassmorphism flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:border-gray-200  duration-150 justify-center items-center"
+            >
               Projects
             </button>
-            <button onClick={() => parallax.current.scrollTo(3)} className="font-semibold text-white px-3 shadow-md flex bg-button justify-center items-center border border-transparent py-2 rounded-md hover:border-gray-200">
+            <button
+              onClick={() => parallax.current.scrollTo(3)}
+              className="font-semibold dark-glassmorphism text-white px-3 shadow-md flex bg-button justify-center items-center  py-2 rounded-md hover:border-gray-200 duration-150"
+            >
               Contact Me
             </button>
           </div>
-        </div>
+        </motion.div>
+        )}
+          </AnimatePresence>
       </nav>
     </div>
   );

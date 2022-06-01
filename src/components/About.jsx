@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+
 import Skills from "./Skills";
 
 export default function About() {
   const [page, setPage] = useState("about");
 
   return (
-    <div className="flex justify-center  md:max-w-[960px] items-center flex-col">
+    <div className="flex justify-center  white-glassmorphism md:max-w-[960px] items-center flex-col">
       <div className="flex mt-1 p-6 shadow rounded-lg w-3/4  h-full">
         <div className="">
           <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
@@ -16,7 +17,7 @@ export default function About() {
               className={
                 page === "about"
                   ? "clicker shadow-md white-glassmorphism w-24 text-white rounded p-2 "
-                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 w-24 text-gray-600 rounded p-2 "
+                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 "
               }
             >
               About
@@ -27,7 +28,7 @@ export default function About() {
               className={
                 page === "skills"
                   ? "clicker shadow-md white-glassmorphism  w-24 text-white rounded p-2 mt-3 "
-                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 w-24 text-gray-600 rounded p-2 mt-3"
+                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 mt-3"
               }
             >
               Skills
@@ -45,14 +46,14 @@ export default function About() {
           </ul>
         </div>
         <div>
-          <div className="h-1/4 text-black border-2 rounded-full border-white w-[0px]" />
+          <div className="h-1/4 text-black border-2 rounded-full border-white w-[0px] opacity-60" />
           {page === "about" && (
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg opacity-60 font-bold h-[75px] text-white -rotate-90">
                 About
               </h2>
             </motion.div>
@@ -64,12 +65,12 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg w-[50px] opacity-60 font-bold h-[75px] text-white -rotate-90">
                 Skills
               </h2>
             </motion.div>
           )}
-          <div className="h-1/2 text-black border-2 rounded-full border-white w-[0px]" />
+          <div className="h-1/2 text-black border-2 rounded-full border-white opacity-60 w-[0px]" />
         </div>
 
         <div className="w-[98vw] max-w-[960px] p-4 flex flex-col items-center">

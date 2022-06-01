@@ -6,7 +6,7 @@ const Projects = () => {
   const [more, setMore] = useState(false);
   return (
     <div classname="overflow-y-hidden">
-      <div className="mx-auto container f-f-p px-4 xl:px-0 py-24 max-w-[600px] md:max-w-[800px]">
+      <div className="mx-auto container white-glassmorphism f-f-p px-4 xl:px-0 py-24 max-w-[600px] md:max-w-[800px]">
         <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
           Projects
         </h1>
