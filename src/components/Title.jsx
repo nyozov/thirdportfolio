@@ -16,7 +16,7 @@ export default function Title() {
         </div>
         <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank">
           {" "}
-          <div className="absolute top-2/3 mt-[-40px] left-1/2 transform -translate-x-1/2 -translate-y-2/3 white-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-white">
+          <div className="  white-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-white">
             My Resume
           </div>
         </a>
