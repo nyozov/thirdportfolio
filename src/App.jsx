@@ -65,22 +65,36 @@ function App() {
           transition={{ delay: 1 }}
           animate={{ opacity: 1, x: 0, duration: 4 }}
         >
-      
           <ParallaxLayer
             factor={0.1}
-            offset={0}
+            offset={0.02}
             speed={1}
             className="bg-transparent rounded-lg flex justify-center items-center flex-col max-w-[300px] m-auto absolute"
           >
-                <span className="text-white text-xl text-shadow">+</span>
-                  <h1 className="text-white text-shadow text-2xl">UI/UX Designer</h1>
-          <div className="flex z-20 mt-2 justify-center items-center w-screen text-white text-shadow text-xl">
-            <HiLocationMarker className="w-8" />
-            <h1 className="ml-[-5px]">Toronto</h1>
-          </div>
-            </ParallaxLayer>
-
-         
+            <span className="text-white text-xl text-shadow">+</span>
+            <h1 className="text-white text-shadow text-2xl">UI/UX Designer</h1>
+            <div className="flex z-20 mt-2 justify-center items-center w-screen text-white text-shadow text-xl">
+              <HiLocationMarker className="w-8" />
+              <h1 className="ml-[-5px]">Toronto</h1>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            factor={0.1}
+            offset={0.065}
+            speed={1.5}
+            className="z-50 rounded-lg flex justify-center items-center flex-col max-w-[300px] m-auto absolute"
+          >
+            <a
+              href="https://resume.creddle.io/resume/dykdi4p41za"
+              className='h-0'
+              target="_blank"
+            >
+              {" "}
+              <div className="z-60 dark-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-gray-200 duration-150">
+                My Resume
+              </div>
+            </a>
+          </ParallaxLayer>
         </motion.div>
         <ParallaxLayer factor={1} offset={0} speed={2.5}>
           <motion.div
@@ -102,8 +116,6 @@ function App() {
           offset={1}
           speed={2}
         >
-
-        
           <About />
         </ParallaxLayer>
 

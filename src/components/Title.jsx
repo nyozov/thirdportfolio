@@ -13,12 +13,12 @@ export default function Title() {
             <HiLocationMarker className="w-8" />
             <h1 className="ml-[-5px]">Toronto</h1>
           </div>
-        <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank">
+        {/* <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank">
           {" "}
           <div className="  dark-glassmorphism shadow-md text-white clicker p-2 px-4 mt-6  hover:border-white">
             My Resume
           </div>
-        </a>
+        </a> */}
         </div>
       </div>
     </div>

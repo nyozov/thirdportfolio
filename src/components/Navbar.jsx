@@ -50,7 +50,7 @@ export default function Navbar({ parallax }) {
           <div className="hidden sm:flex flex-row space-x-4">
             <div
               onClick={() => parallax.current.scrollTo(2)}
-              className="rounded-md flex space-x-2 w-24 h-10 font-semibold  text-white hover:text-gray-300 cursor-pointer text-shadow justify-center items-center"
+              className="rounded-md flex space-x-2 w-24 h-10 font-semibold duration-150  text-white hover:text-gray-300 cursor-pointer text-shadow justify-center items-center"
             >
               Projects
             </div>
