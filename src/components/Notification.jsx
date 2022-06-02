@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 const Index = ({flag, setFlag}) => {
    
     return (
@@ -11,8 +11,8 @@ const Index = ({flag, setFlag}) => {
                         </svg>
                     </div>
                    
-                        <p className="p-2 text-lg text-gray-800 dark:text-gray-100 font-semibold pb-1">Message Sent</p>
-                        <p className="p-2 text-sm text-gray-600 dark:text-gray-400 font-normal">You have successfully sent an email. Thank you for the message/feedback.</p>
+                        <p className="p-2 text-lg text-gray-100 font-semibold pb-1">Message Sent</p>
+                        <p className="p-2 text-sm text-gray-400 font-normal">You have successfully sent an email. Thank you for the message/feedback.</p>
                     
                       
                         <div className="hover:bg-gray-700 sm:pt-4 pb-4 flex justify-center items-center w-full cursor-pointer" onClick={()=> setFlag(false)}>

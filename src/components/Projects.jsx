@@ -1,15 +1,19 @@
 import myProjects from "./myProjects";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import PageIndicator from "./PageIndicator";
 
 const Projects = () => {
-  const [more, setMore] = useState(false);
+
+  const [projectsPage, setProjectsPage] = useState(1);
   return (
     <div classname="overflow-y-hidden">
-      <div className="mx-auto container white-glassmorphism f-f-p px-4 xl:px-0 py-24 max-w-[600px] md:max-w-[800px]">
-        <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
+      <div className="mx-auto container min-h-screen white-glassmorphism f-f-p px-4 xl:px-0 py-24 max-w-[600px] md:max-w-[800px]">
+        <h1 className="text-center text-3xl font-extrabold text-shadow text-gray-200">
           Projects
         </h1>
+
+        {projectsPage === 1 && 
         <div className="md:mt-24 f-f-p">
           <div className=" flex justify-center w-full">
             <div className="flex flex-col items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
@@ -37,7 +41,7 @@ const Projects = () => {
                   {myProjects[1].badges.map((badge, index) => (
                     <div
                       key={index}
-                      className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
+                      className="border m-[2px] mt-2 border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
                         <div
@@ -47,7 +51,7 @@ const Projects = () => {
                               : "h-1 w-1 rounded-full bg-green-500 mr-1"
                           }
                         />
-                        <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
+                        <span className="text-xs text-gray-100 font-normal">
                           {badge}
                         </span>
                       </div>
@@ -90,7 +94,7 @@ const Projects = () => {
                   {myProjects[0].badges.map((badge, index) => (
                     <div
                       key={index}
-                      className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
+                      className="border m-[2px] mt-2 border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
                         <div
@@ -100,7 +104,7 @@ const Projects = () => {
                               : "h-1 w-1 rounded-full bg-orange-500 mr-1"
                           }
                         />
-                        <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
+                        <span className="text-xs text-gray-100 font-normal">
                           {badge}
                         </span>
                       </div>
@@ -136,7 +140,7 @@ const Projects = () => {
                   {myProjects[2].badges.map((badge, index) => (
                     <div
                       key={index}
-                      className="border m-[2px] mt-2 border-gray-300 dark:border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
+                      className="border m-[2px] mt-2 border-gray-700 h-6 w-18 p-2 md:p-0 md:h-8 md:w-24 md:mb-0 rounded-md flex items-center justify-center"
                     >
                       <div className="flex items-center">
                         <div
@@ -146,7 +150,7 @@ const Projects = () => {
                               : "h-1 w-1 rounded-full bg-green-500 mr-1"
                           }
                         />
-                        <span className="text-xs text-gray-800 dark:text-gray-100 font-normal">
+                        <span className="text-xs text-gray-100 font-normal">
                           {badge}
                         </span>
                       </div>
@@ -157,28 +161,14 @@ const Projects = () => {
                   {myProjects[2].desc}
                 </h2>
               </div>
+       
             </div>
           </div>
         </div>
+        }
+     <PageIndicator projectsPage={projectsPage} setProjectsPage={setProjectsPage}/>
       </div>
-      <div className="w-screen flex justify-center items-center">
-        {!more && (
-          <div
-            onClick={() => setMore(true)}
-            className="clicker  font-semibold text-white p-3 hover:border-white shadow-md flex white-glassmorphism justify-center w-36 items-center border-gray-200"
-          >
-            See More
-          </div>
-        )}
-        {more && (
-          <div
-            onClick={() => setMore(false)}
-            className="clicker border border-white font-semibold text-white p-3 hover:border-white shadow-md flex white-glassmorphism justify-center w-36 items-center border-gray-200"
-          >
-            See Less
-          </div>
-        )}
-      </div>
+      
     </div>
   );
 };
