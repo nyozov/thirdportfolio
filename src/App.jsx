@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App overflow-y-hidden">
       <AnimatedCursor
         innerSize={8}
         outerSize={8}
@@ -86,7 +86,7 @@ function App() {
           >
             <a
               href="https://resume.creddle.io/resume/dykdi4p41za"
-              className='h-0'
+              className="h-0"
               target="_blank"
             >
               {" "}

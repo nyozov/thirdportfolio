@@ -1,6 +1,9 @@
 import galleryImg from '../assets/preview-wide.png'
 import etuneImg from '../assets/etune-img.png'
 import therapifyImg from '../assets/therapifyImg.png'
+import ethsendImg from '../assets/ethsend-img.png'
+import tinyappImg from '../assets/tinyapp-img.png'
+import schedulerImg from '../assets/scheduler-img.png'
 
 
 const myProjects = [
@@ -36,15 +39,15 @@ const myProjects = [
   },
   {
     name: "Scheduler",
-    badges: ["React"],
-    img: "https://github.com/nyozov/scheduler/raw/master/docs/creating-interview.png?raw=true",
+    badges: ["React", "Express"],
+    img: schedulerImg,
     url: "https://github.com/nyozov/scheduler",
     desc: "A user can book an appointment by selecing a day, selecting an open spot, typing in their name, and selecting an interviewer from a list.",
   },
   {
     name: "Url Shortener",
     badges: ["Express", "Vanilla JS"],
-    img: "https://github.com/nyozov/tinyapp/raw/master/docs/newurl-page.png?raw=true",
+    img: tinyappImg,
     url: "https://github.com/nyozov/tinyapp",
     desc: "Full stack web application that allows users to shorten long URLs (à la bit.ly). A user's URLs are saved to a PSQL database. Uses cookies and password encryption. ",
   },
@@ -55,6 +58,14 @@ const myProjects = [
     url: "https://github.com/nyozov/tweeter",
     desc: "Single-page AJAX based Twitter clone that uses jQuery, HTML5, and CSS3. A user can write a message, and it will show up on their profile.",
   },
+  {
+    name: "EthSend",
+    badges: ["React", ["Solidity"]],
+    img: ethsendImg,
+    url: "https://github.com/nyozov/30test",
+    desc: "Crypto send/receive dapp utilizing metamask integration",
+  },
+  
  
 ];
 

@@ -137,7 +137,7 @@ export default function Navbar({ parallax }) {
           id="MobileNavigation"
           className={`${
             show ? "block" : "hidden"
-          } sm:hidden p-6 rounded-full backdrop-blur mt-4 mx-auto`}
+          } sm:hidden p-6 rounded-full mt-4 mx-auto`}
         >
           <div className="flex flex-row items-center justify-center space-x-6">
             <a href="https://github.com/nyozov" target="_blank">

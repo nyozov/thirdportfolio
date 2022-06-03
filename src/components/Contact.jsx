@@ -98,7 +98,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className=" no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150 h-48 resize-none"
+                  className="z-10 no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150 h-48 resize-none"
                   onChange={handleChange}
                   maxLength="200"
                   id="message"
@@ -109,8 +109,8 @@ export default function Contact() {
                 <div
                   className={
                     !charNumber
-                      ? `text-red-700 text-sm text-right px-2 mt-[-40px]`
-                      : `text-sm text-gray-200 text-right px-2 mt-[-40px]`
+                      ? `text-red-700 text-sm text-right px-2 mt-[-40px] z-60`
+                      : `text-sm text-gray-200 text-right px-2 mt-[-40px] z-60`
                   }
                 >
                   {charNumber}
