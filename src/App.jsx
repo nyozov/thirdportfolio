@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import VideoBg from "./components/VideoBg";
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";

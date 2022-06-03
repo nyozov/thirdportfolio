@@ -16,8 +16,8 @@ export default function About() {
               onClick={() => setPage("about")}
               className={
                 page === "about"
-                  ? "clicker shadow-md white-glassmorphism w-24 text-white rounded p-2 "
-                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 "
+                  ? "clicker shadow-md white-glassmorphism w-24 text-white rounded p-2 flex justify-center items-center "
+                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 flex justify-center items-center "
               }
             >
               About
@@ -27,8 +27,8 @@ export default function About() {
               onClick={() => setPage("skills")}
               className={
                 page === "skills"
-                  ? "clicker shadow-md white-glassmorphism  w-24 text-white rounded p-2 mt-3 "
-                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 mt-3"
+                  ? "clicker shadow-md white-glassmorphism  w-24 text-white rounded p-2 mt-3 flex justify-center items-center "
+                  : "clicker shadow-md white-glassmorphism hover:border-gray-200 duration-150 w-24 text-gray-600 rounded p-2 mt-3 flex justify-center items-center"
               }
             >
               Skills
