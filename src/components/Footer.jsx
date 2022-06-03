@@ -16,13 +16,13 @@ export default function Footer() {
       <div className='flex  justify-evenly w-full h-full items-center'>
        <div className='flex justify-between px-4  w-[200px]'>
        <a href="https://www.linkedin.com/in/nyozov/" target="_blank" >
-        <p className='cursor-pointer hover:underline'>LinkedIn</p>
+        <p className='cursor-pointer border-b border-transparent hover:border-white duration-150'>LinkedIn</p>
         </a>
         <a href="https://github.com/nyozov" target="_blank" >
-        <p className='cursor-pointer hover:underline'>Github</p>
+        <p className='cursor-pointer border-b border-transparent hover:border-white duration-150'>Github</p>
         </a>
         <a href="https://resume.creddle.io/resume/dykdi4p41za" target="_blank" >
-        <p className='cursor-pointer hover:underline'>Resume</p>
+        <p className='cursor-pointer border-b border-transparent hover:border-white duration-150'>Resume</p>
         </a>
         </div>
       </div>

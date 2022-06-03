@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import VideoBg from "./components/VideoBg";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import Title from "./components/Title";
 import Projects from "./components/Projects";
 import About from "./components/About";

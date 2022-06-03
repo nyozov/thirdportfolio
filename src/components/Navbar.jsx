@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar({ parallax }) {
   const spring = {
@@ -126,48 +126,46 @@ export default function Navbar({ parallax }) {
         </div>
         {/* Mobile and small-screen devices (toggle Menu) */}
         <AnimatePresence>
-
-      
-        {show && (
-        <motion.div
-        initial={{opacity:0, y:-100}}
-        transition={spring}
-        animate={{opacity:1, y: 0}}
-        exit={{opacity:0, y: -220}}
-          id="MobileNavigation"
-          className={`${
-            show ? "block" : "hidden"
-          } sm:hidden p-6 rounded-full mt-4 mx-auto`}
-        >
-          <div className="flex flex-row items-center justify-center space-x-6">
-            <a href="https://github.com/nyozov" target="_blank">
-              <div className="text-white shadow-md white-glassmorphism hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
-                <AiFillGithub size={24} />
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
-              <div className="text-white white-glassmorphism shadow-md hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
-                <AiFillLinkedin size={24} />
-              </div>
-            </a>
-          </div>
-          <div className="flex flex-col gap-4 mt-4 w-80 mx-auto ">
-            <button
-              onClick={() => parallax.current.scrollTo(2)}
-              className="rounded-md white-glassmorphism flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:border-gray-200  duration-150 justify-center items-center"
+          {show && (
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              transition={spring}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -220 }}
+              id="MobileNavigation"
+              className={`${
+                show ? "block" : "hidden"
+              } sm:hidden p-6 rounded-full mt-4 mx-auto`}
             >
-              Projects
-            </button>
-            <button
-              onClick={() => parallax.current.scrollTo(3)}
-              className="font-semibold dark-glassmorphism text-white px-3 shadow-md flex bg-button justify-center items-center  py-2 rounded-md hover:border-gray-200 duration-150"
-            >
-              Contact Me
-            </button>
-          </div>
-        </motion.div>
-        )}
-          </AnimatePresence>
+              <div className="flex flex-row items-center justify-center space-x-6">
+                <a href="https://github.com/nyozov" target="_blank">
+                  <div className="text-white shadow-md white-glassmorphism hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
+                    <AiFillGithub size={24} />
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/nyozov/" target="_blank">
+                  <div className="text-white white-glassmorphism shadow-md hover:border-gray-200 duration-150 cursor-pointer p-[2px] rounded">
+                    <AiFillLinkedin size={24} />
+                  </div>
+                </a>
+              </div>
+              <div className="flex flex-col gap-4 mt-4 w-80 mx-auto ">
+                <button
+                  onClick={() => parallax.current.scrollTo(2)}
+                  className="rounded-md white-glassmorphism flex space-x-2 w-full text-shadow h-10 shadow leading-3 font-semibold text-white hover:border-gray-200  duration-150 justify-center items-center"
+                >
+                  Projects
+                </button>
+                <button
+                  onClick={() => parallax.current.scrollTo(3)}
+                  className="font-semibold dark-glassmorphism text-white px-3 shadow-md flex bg-button justify-center items-center  py-2 rounded-md hover:border-gray-200 duration-150"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </div>
   );

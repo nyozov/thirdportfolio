@@ -61,7 +61,7 @@ export default function Contact() {
           <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-shadow text-gray-200">
             Contact
           </h1>
-          <p className="text-gray-400 text-sm text-left p-2">
+          <p className="text-gray-100 text-sm text-left p-2">
             Send me a message here or contact me though LinkedIn/Github
           </p>
           <form
@@ -93,12 +93,12 @@ export default function Contact() {
               <div className="w-full px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-200 text-xs font-bold mb-2"
-                  for="grid-password"
+                  for="message"
                 >
                   Message
                 </label>
                 <textarea
-                  className="z-10 no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150 h-48 resize-none"
+                  className=" z-index-behind no-resize appearance-none block w-full white-glassmorphism text-gray-300 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-200 duration-150 h-48 resize-none"
                   onChange={handleChange}
                   maxLength="200"
                   id="message"
@@ -109,8 +109,8 @@ export default function Contact() {
                 <div
                   className={
                     !charNumber
-                      ? `text-red-700 text-sm text-right px-2 mt-[-40px] z-60`
-                      : `text-sm text-gray-200 text-right px-2 mt-[-40px] z-60`
+                      ? `text-red-700 text-sm text-right px-2 mt-[-10px] z-90`
+                      : `text-sm text-gray-200 text-right px-2 mt-[-40px] z-90`
                   }
                 >
                   {charNumber}

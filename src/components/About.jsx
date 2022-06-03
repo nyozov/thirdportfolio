@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import profilePic from "../assets/ny_profilepic.jpeg";
 
 import Skills from "./Skills";
 
@@ -80,12 +81,21 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h1 className="text-xl font-bold text-left text-gray-200">
-                Full Stack Developer + UI/UX Designer
-              </h1>
+              <div className="flex items-center justify-evenly">
+         
+                  <img className=" shadow-lg rounded-full w-12 h-12" src={profilePic} />
+           
+                <h1 className="text-xl blue-glassmorphism p-2 font-bold text-left text-gray-200">
+                  Full Stack Developer + UI/UX Designer
+                </h1>
+              </div>
+
               <p className="mt-3 text-sm leading-1 text-left text-gray-400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                Hi I'm Nick 👋,  a detail-oriented web developer with over a year of experience and a passion for creating,
+                optimizing, and improving web applications. Based out of Toronto, I am a recent web development bootcamp graduate
+                ready to take the next step and work with industry professionals.
+                
+                 Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into
