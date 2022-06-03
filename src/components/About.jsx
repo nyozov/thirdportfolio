@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-
 import Skills from "./Skills";
 
 export default function About() {
@@ -53,7 +52,7 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg opacity-60 font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
                 About
               </h2>
             </motion.div>
@@ -65,7 +64,7 @@ export default function About() {
               transition={{ delay: 0.1, duration: 0.5 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className=" text-lg w-[50px] opacity-60 font-bold h-[75px] text-white -rotate-90">
+              <h2 className=" text-lg w-[50px] font-bold h-[75px] text-white -rotate-90">
                 Skills
               </h2>
             </motion.div>
