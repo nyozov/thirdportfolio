@@ -32,7 +32,7 @@ export default function Navbar({ parallax }) {
           </div>
           <div className="sm:ml-28 flex space-x-3 items-center text-white">
             <svg
-              className="name-icon eth-card rounded-full"
+              className="name-icon eth-card opacity-80 rounded-full"
               width={34}
               height={34}
               viewBox="0 0 34 34"

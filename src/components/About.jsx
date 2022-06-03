@@ -8,7 +8,7 @@ export default function About() {
   const [page, setPage] = useState("about");
 
   return (
-    <div className="flex justify-center  h-3/4 white-glassmorphism md:max-w-[960px] items-center flex-col">
+    <div className="flex justify-center h-full   md:h-3/4 white-glassmorphism md:max-w-[960px] items-center flex-col">
       <div className="flex mt-1 p-6  rounded-lg w-3/4  h-full">
         <div className="">
           <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
@@ -73,7 +73,7 @@ export default function About() {
           <div className="h-1/2 text-black border-2 rounded-full border-white opacity-60 w-[0px]" />
         </div>
 
-        <div className="w-[98vw] max-w-[960px] p-4 flex flex-col items-center">
+        <div className="w-[100vw] max-w-[960px] p-4 flex flex-col items-center">
           {page === "about" && (
             <motion.div
               className=" flex flex-col w-full p-4"
@@ -94,16 +94,18 @@ export default function About() {
                 Hi I'm Nick 👋,  a detail-oriented web developer with over a year of experience and a passion for creating,
                 optimizing, and improving web applications. Based out of Toronto, I am a recent web development bootcamp graduate
                 ready to take the next step and work with industry professionals.
-                
+               
+              </p>
+
+              <p className="mt-3 text-sm leading-1 text-left text-gray-400">
+            
+            
                  Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum. No idea what else to add, good job making it this far.
+                electronic typesetting, remaining essentially unchanged.
+                No idea what else to add, thank you for making it this far.
               </p>
             </motion.div>
           )}
