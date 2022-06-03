@@ -15,7 +15,7 @@ export default function Skills() {
     >
       <div className="flex w-full items-center">
         <img
-          className="object-cover rounded-full w-12 h-12"
+          className="object-cover rounded-full w-10 h-10"
           src={frontendImg}
         />
         <h1 className="text-xl ml-1 p-1 px-2 blue-glassmorphism font-bold text-left text-gray-200">
@@ -33,7 +33,7 @@ export default function Skills() {
       </p>
       <div className="flex w-full mt-3 items-center">
         <img
-          className="object-cover rounded-full w-12 h-12"
+          className="object-cover rounded-full w-10 h-10"
           src={backendImg}
         />
         <h1 className="text-xl ml-1 p-1 px-2 blue-glassmorphism font-bold text-left text-gray-200">
@@ -47,7 +47,7 @@ export default function Skills() {
 
       <div className="flex w-full mt-3 items-center">
         <img
-          className="object-cover rounded-full w-12 h-12"
+          className="object-cover rounded-full w-10 h-10"
           src={dbImg}
 
         />
@@ -61,7 +61,7 @@ export default function Skills() {
 
       <div className="flex w-full mt-3 items-center">
         <img
-          className="object-cover rounded-full w-12 h-12"
+          className="object-cover rounded-full w-10 h-10"
           src={uiuxImg}
         />
         <h1 className="text-xl ml-1 p-1 px-2 blue-glassmorphism font-bold text-left text-gray-200">
@@ -74,7 +74,7 @@ export default function Skills() {
 
       <div className="flex w-full mt-3 items-center">
         <img
-          className="object-cover rounded-full w-12 h-12"
+          className="object-cover rounded-full w-10 h-10"
           src={testingImg}
         />
         <h1 className="text-xl ml-1 p-1 px-2 blue-glassmorphism font-bold text-left text-gray-200">

@@ -8,7 +8,7 @@ export default function About() {
   const [page, setPage] = useState("about");
 
   return (
-    <div className="flex justify-center  white-glassmorphism md:max-w-[960px] items-center flex-col">
+    <div className="flex justify-center  h-3/4 white-glassmorphism md:max-w-[960px] items-center flex-col">
       <div className="flex mt-1 p-6  rounded-lg w-3/4  h-full">
         <div className="">
           <ul className="text-gray-600 flex justify-center p-2 flex-col w-full items-center">
@@ -103,7 +103,7 @@ export default function About() {
                 popularised in the 1960s with the release of Letraset sheets
                 containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                Lorem Ipsum. No idea what else to add, good job making it this far.
               </p>
             </motion.div>
           )}
