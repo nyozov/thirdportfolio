@@ -32,7 +32,7 @@ export default function pageTwo() {
 
         <div className="sm:ml-12  flex mt-16 p-2 md:p-0 text-left flex-col items-start md:mr-6">
           <h1 className="focus:outline-none text-md md:text-xl font-bold leading-3 text-white">
-            TinyApp
+            Therapify
           </h1>
           <div className="flex">
             {myProjects[5].badges.map((badge, index) => (
@@ -43,9 +43,9 @@ export default function pageTwo() {
                 <div className="flex items-center">
                   <div
                     className={
-                      badge === "Express"
-                        ? "h-1 w-1 rounded-full bg-green-500 mr-1"
-                        : "h-1 w-1 rounded-full bg-yellow-500 mr-1"
+                      badge === "React"
+                        ? "h-1 w-1 rounded-full bg-indigo-500 mr-1"
+                        : "h-1 w-1 rounded-full bg-green-500 mr-1"
                     }
                   />
                   <span className="text-xs text-gray-100 font-normal">

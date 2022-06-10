@@ -4,9 +4,18 @@ import therapifyImg from '../assets/therapifyImg.png'
 import ethsendImg from '../assets/ethsend-img.png'
 import tinyappImg from '../assets/tinyapp-img.png'
 import schedulerImg from '../assets/scheduler-img.png'
+import tvhutImg from '../assets/tvhut-img.png'
 
 
 const myProjects = [
+  {
+    name: "TvHut",
+    badges: ["React"],
+    img: tvhutImg,
+    url: "https://github.com/nyozov/movies",
+    siteUrl: "https://tvhut.netlify.app/",
+    desc: "Tv show information app utilizing the movie db API to display information such as plot summary, cast, genre, trailer, and rating. Shows can be searched by title, genre, or section(trending, top rated, etc.).",
+  },
   {
     name: "Gallery",
     badges: ["React", "Firebase"],
@@ -15,6 +24,7 @@ const myProjects = [
     siteUrl: "https://coherent-server-332620.web.app/",
     desc: "Image hosting app where a user can log in, upload and delete images in their personal storage. Fully functional with drag and drop upload, load transitions, and auth."
   },
+  
   {
     name: "Etune",
     badges: ["React", "Express"],
@@ -30,13 +40,7 @@ const myProjects = [
     url: "https://github.com/habibcodes/therapify",
     desc: "Tele-health service connecting a patient and a practitioner through features including a calendar for appointments, text-chat, and video-chat through WebRTC.",
   },
-  {
-    name: "Weather App",
-    badges: ["React"],
-    img: "https://github.com/nyozov/weather-app/raw/master/public/weather-app-gif.gif?raw=true",
-    url: "https://github.com/nyozov/weather-app",
-    desc: "Simple weather app where a user can type in a location, and in return they will recieve a weather report including degrees, humidity, and conditions.",
-  },
+ 
   {
     name: "Scheduler",
     badges: ["React", "Express"],
@@ -45,11 +49,11 @@ const myProjects = [
     desc: "A user can book an appointment by selecing a day, selecting an open spot, typing in their name, and selecting an interviewer from a list.",
   },
   {
-    name: "Url Shortener",
-    badges: ["Express", "Vanilla JS"],
-    img: tinyappImg,
-    url: "https://github.com/nyozov/tinyapp",
-    desc: "Full stack web application that allows users to shorten long URLs (à la bit.ly). A user's URLs are saved to a PSQL database. Uses cookies and password encryption. ",
+    name: "Therapify",
+    badges: ["React", "Express"],
+    img: therapifyImg,
+    url: "https://github.com/habibcodes/therapify",
+    desc: "Tele-health service connecting a patient and a practitioner through features including a calendar for appointments, text-chat, and video-chat through WebRTC.",
   },
   {
     name: "Tweeter",

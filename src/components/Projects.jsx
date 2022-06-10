@@ -35,7 +35,7 @@ const Projects = () => {
 
                 <div className="sm:ml-12  flex mt-16 p-2 md:p-0 text-left flex-col items-start md:mr-6">
                   <h1 className="focus:outline-none text-md md:text-xl font-bold leading-3 text-white">
-                    E-Tune
+                    Gallery
                   </h1>
                   <div className="flex">
                     {myProjects[1].badges.map((badge, index) => (
@@ -48,7 +48,7 @@ const Projects = () => {
                             className={
                               badge === "React"
                                 ? "h-1 w-1 rounded-full bg-indigo-700 mr-1"
-                                : "h-1 w-1 rounded-full bg-green-500 mr-1"
+                                : "h-1 w-1 rounded-full bg-orange-500 mr-1"
                             }
                           />
                           <span className="text-xs text-gray-100 font-normal">
@@ -88,7 +88,7 @@ const Projects = () => {
               <div className="flex flex-col items-center md:items-start mt-9 md:mt-0 p-2 md:p-0 md:pl-12   md:w-1/2">
                 <div className="text-left border-white flex mt-0 md:mt-12 flex-col items-start w-11/12 md:w-8/12">
                   <h1 className="focus:outline-none text-md md:text-xl font-bold leading-5 text-white">
-                    Gallery
+                    TvHut
                   </h1>
                   <div className="flex">
                     {myProjects[0].badges.map((badge, index) => (
@@ -134,7 +134,7 @@ const Projects = () => {
 
                 <div className="text-left border-white flex mt-12 flex-col items-start  w-11/12 md:w-8/12">
                   <h1 className="focus:outline-none md:text-xl font-bold leading-5 text-white">
-                    Therapify
+                   E-tune
                   </h1>
                   <div className="flex">
                     {myProjects[2].badges.map((badge, index) => (
